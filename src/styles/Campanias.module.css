@@ -1,0 +1,6 @@
+#contenedorcampanias{
+    background-color: #00253f;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
