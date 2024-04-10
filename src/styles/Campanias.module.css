@@ -1,6 +1,48 @@
 #contenedorcampanias{
-    background-color: #00253f;
+    background-color: var(--color-azul-oscuro);
     display: flex;
     flex: 1;
     flex-direction: column;
+    justify-content:center ;
+    align-content: center;
+}
+
+#contenedorcampanias>h2{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: 36pt;
+    padding-bottom: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#contenedorcampanias>div{
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorcampanias>div>select{
+    padding: 1rem;
+    border: none;
+    background-color: var(--color-azul-claro);
+    color: white;
+    width: 20rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.2rem;    
+}
+
+#contenedorcampanias>div>select>option{
+    letter-spacing: 0.2rem;    
+}
+
+#contenedorcampanias>div>button{
+    padding: 1rem;
+    border: none;
+    background-color: var(--color-azul-oscuro);
+    color: white;
+    text-align: center;
+    margin-left:1rem;
+    border: 1px solid white;
+    letter-spacing: 0.2rem;
 }

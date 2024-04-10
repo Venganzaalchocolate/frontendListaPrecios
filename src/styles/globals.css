@@ -2,15 +2,18 @@
     --color-azul-oscuro: #001B4B;
     --color-azul-claro: #005896;
     --color-azul-claro-plus: #308acc;
-    --color-dorado: #C97814;
+    --color-dorado: #c36e57;
     --color-verde: #6e8174;
     --color-dorado-oscuro: #9c8364;
+    --color-gris-claro: #d1ccc9;
+    --color-gris-oscuro: #676767;
 }
 
 *{
     margin:0;
     padding:0;
     list-style: none;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 html, body{
