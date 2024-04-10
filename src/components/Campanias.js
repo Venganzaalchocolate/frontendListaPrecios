@@ -18,12 +18,16 @@ export default function Campanias({data, addCampania}) {
 
     return (
         <div id={style.contenedorcampanias}>
-            <select name='cam' value={selectedOption} onChange={handleChange}>
+            <h2>LISTA DE PRECIOS</h2>
+            <div>
+                <select name='cam' value={selectedOption} onChange={handleChange}>
                 {data.map((x)=>{
                     return <option value={x.idCampania}>{x.nombreCampania}</option>
                 })}
-            </select>
-            <button onClick={()=>camCampania()}>Ver Precios</button>
+                </select>
+                <button onClick={()=>camCampania()}>CONSULTAR PRECIO</button>
+            </div>
+            
         </div>
    
   )
