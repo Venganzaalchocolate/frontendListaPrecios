@@ -1,19 +1,21 @@
 import { useState, useEffect } from "react";
+import styles from "../styles/Listaprecios.module.css"; 
+
 
 export default function Listaprecios({ pis }) {
   if(pis!=null && pis!=[]) {
     return (
-      <div>
-        {pis.map((casa) => {
+      <div id={styles.contenedorlista}>
+        {pis.map((casa,index ) => {
           return (
-            <div class='tarjeta'>
-              <div class='textoPrincipal'>
+            <div key={index} className={styles.tarjeta}>
+              <div className={styles.textoPrincipal}>
                 <label>VIVIENDA</label>
                 <label>PRECIO</label>
-                <p class='nombre'>{casa.nombrePropiedad}</p>
-                <p class='precio'>{casa.precioPropiedad} €</p>
+                <p className={styles.nombre}>{casa.nombrePropiedad}</p>
+                <p className={styles.precio}>{casa.precioPropiedad} €</p>
               </div>
-              <div class='datos'>
+              <div className={styles.datos}>
                 {(casa.bloquePropiedad != null) ?
                   <div>
                     <label>Bloque: {casa.bloquePropiedad}</label>
