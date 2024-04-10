@@ -1,10 +1,33 @@
-.tablaDatos{
-
-    border:1px solid var(--color-azul-oscuro);
-    padding:0.5rem;
-    background-color: red;
-
+div.contenedorTabla{
+    display:flex;
+    background-color:white;
+    justify-content: end;
 
 
 }
 
+.tablaDatos{
+
+  
+  margin: 1rem;
+  color:var(--color-azul-oscuro);
+  letter-spacing: 0.1rem;
+ border-collapse: collapse;
+ text-align: center;
+}
+
+
+.tablaDatos thead>tr>th{
+    background-color:var(--color-dorado-oscuro) ;
+    padding: 1rem;
+    color:white;
+    
+    
+}
+
+.tablaDatos tbody tr{
+    border-bottom: 1px solid var(--color-dorado) ;
+    padding:0.5rem 0;
+    margin:0.2rem;
+
+}

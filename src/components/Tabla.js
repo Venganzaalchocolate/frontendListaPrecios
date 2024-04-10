@@ -22,7 +22,7 @@ export default function Tabla({ idCampania }) {
   
   {
     return (
-      <div >
+      <div className={styles.contenedorTabla}>
         <table className={styles.tablaDatos}>
           <thead>
             <tr>

@@ -39,7 +39,7 @@ export default function Home({data}) {
   const mostrarPrecios=()=>{
     if(cam!=''){
       return <div>
-        <Constructor idCampania={cam}></Constructor>
+        {/* <Constructor idCampania={cam}></Constructor> */}
         <Tabla idCampania={cam}></Tabla>
         <Listaprecios pis={pis}></Listaprecios>
       </div>
