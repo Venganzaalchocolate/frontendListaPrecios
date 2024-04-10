@@ -1,4 +1,5 @@
 import { useState } from "react"
+import style from '../styles/Campanias.module.css'
 
 export default function Campanias({data, addCampania}) {
     const [selectedOption, setSelectedOption]=useState('')
@@ -16,7 +17,7 @@ export default function Campanias({data, addCampania}) {
     };
 
     return (
-        <div>
+        <div id={style.contenedorcampanias}>
             <select name='cam' value={selectedOption} onChange={handleChange}>
                 {data.map((x)=>{
                     return <option value={x.idCampania}>{x.nombreCampania}</option>
