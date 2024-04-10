@@ -1,15 +1,18 @@
-div.contenedorlista{
-    background-color: white;
+div#contenedorlista{
+    background-color: var(--color-azul-oscuro);
+    padding-top:1rem;
 
 }
 
 
 
-.tarjeta{
+div.tarjeta{
 	background-color:white;
     padding: 1rem;
-    margin:0.5rem;
-}
+    margin:1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   
+   }
 
 .tituloCampania{
 	margin-top:2rem;
@@ -30,7 +33,7 @@ div.contenedorlista{
 .textoPrincipal>p{
     flex:50%;
 	font-weight:bold;
-    color: #001B4B;
+    color:  var(--color-dorado);
 	font-size: 20pt;
     margin-bottom:1rem;
 }
