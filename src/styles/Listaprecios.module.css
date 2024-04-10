@@ -1,0 +1,60 @@
+div.contenedorlista{
+    background-color: white;
+
+}
+
+
+
+.tarjeta{
+	background-color:white;
+    padding: 1rem;
+    margin:0.5rem;
+}
+
+.tituloCampania{
+	margin-top:2rem;
+    color: white;
+    font-size:30pt;
+}
+
+.textoPrincipal{
+	display:flex;
+    flex-wrap:wrap;
+}
+
+.textoPrincipal>label{
+	flex:50%;
+    font-size: 10pt;
+}
+
+.textoPrincipal>p{
+    flex:50%;
+	font-weight:bold;
+    color: #001B4B;
+	font-size: 20pt;
+    margin-bottom:1rem;
+}
+
+.nombre{
+	font-size: 30pt;
+}
+
+.precio{
+	color: #005896;
+}
+
+.datos{
+	display:flex;
+}
+
+.datos>div{
+	display: flex;
+  	align-items: end;
+    padding: 0.5rem;
+}
+
+.datos>:nth-child(1){
+    padding-left: 0;
+}
+
+
