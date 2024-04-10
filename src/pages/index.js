@@ -7,6 +7,8 @@ import { Layout } from "@/components/Layout";
 import { useState } from 'react';
 import Campanias from "@/components/Campanias";
 import Listaprecios from "@/components/Listaprecios";
+import Tabla from "@/components/Tabla";
+import Constructor from "@/components/Constructor";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +38,13 @@ export default function Home({data}) {
 
   const mostrarPrecios=()=>{
     if(cam!=''){
-      return <Listaprecios pis={pis}></Listaprecios>
+      return <div>
+        <Constructor idCampania={cam}></Constructor>
+        <Tabla idCampania={cam}></Tabla>
+        <Listaprecios pis={pis}></Listaprecios>
+      </div>
+      
+     
     }
   }
 
