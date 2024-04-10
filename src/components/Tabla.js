@@ -1,5 +1,7 @@
 import React from "react";
 import datos from "../../public/datos.json";
+import styles from "../styles/Tabla.module.css";
+
 
 //Función que recibe un id y renderiza una tabla con datos extraidos de un json
 export default function Tabla({ idCampania }) {
@@ -10,15 +12,18 @@ export default function Tabla({ idCampania }) {
   const campania = datos.find((campania) => campania.idCampania === idCampania);
   // console.log(campania)
   //propuesta de mejora, solo if(campania),
-  if (
-    idCampania != null &&
-    idCampania != "" &&
-    campania != null &&
-    campania != ""
-  ) {
+  // if (
+  //   idCampania != null &&
+  //   idCampania != "" &&
+  //   campania != null &&
+  //   campania != ""
+  // )
+  if(campania)
+  
+  {
     return (
-      <div>
-        <table>
+      <div >
+        <table className={styles.tablaDatos}>
           <thead>
             <tr>
               <th colSpan="5">Datos - {campania.nombreCampania}</th>

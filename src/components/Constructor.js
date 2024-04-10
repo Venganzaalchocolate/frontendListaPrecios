@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
 
+import styles from "../styles/Constructor.module.css"; 
+
 //Función que busca una imagen la cual coincide con el id
 //lo renderiza si existe
 export default function Constructor({idCampania}) {

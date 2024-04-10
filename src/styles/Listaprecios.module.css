@@ -4,8 +4,6 @@ div#contenedorlista{
 
 }
 
-
-
 div.tarjeta{
 	background-color:white;
     padding: 1rem;
@@ -23,11 +21,13 @@ div.tarjeta{
 .textoPrincipal{
 	display:flex;
     flex-wrap:wrap;
+    letter-spacing:0.2rem;
+    border-bottom:2px solid var(--color-gris-claro)
 }
 
 .textoPrincipal>label{
 	flex:50%;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 .textoPrincipal>p{
@@ -42,12 +42,14 @@ div.tarjeta{
 	font-size: 30pt;
 }
 
-.precio{
+/* .precio{
 	color: #005896;
-}
+} */
 
 .datos{
 	display:flex;
+    letter-spacing: 0.1rem;
+  color: var(--color-azul-oscuro);
 }
 
 .datos>div{
@@ -58,6 +60,34 @@ div.tarjeta{
 
 .datos>:nth-child(1){
     padding-left: 0;
+}
+
+
+/* DISPOSITIVO MÓVIL */
+
+@media screen and (max-width:750px) {
+ 
+   
+    .datos{
+    display:flex;
+        flex-wrap:wrap;
+        gap: 3px;
+    }
+
+    .datos>div{
+        padding: 0;
+    }
+    
+    div.datos>div{
+    flex: 49%;
+    }
+    
+    
+ 
+    
+
+
+    
 }
 
 
