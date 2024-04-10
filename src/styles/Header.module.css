@@ -1,4 +1,5 @@
 .header{
+    background-color: var(--color-azul-oscuro);
     padding: 1rem;
     display: flex;
     justify-content: center;

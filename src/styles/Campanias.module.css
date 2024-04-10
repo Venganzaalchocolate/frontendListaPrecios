@@ -46,3 +46,20 @@
     border: 1px solid white;
     letter-spacing: 0.2rem;
 }
+
+#contenedorcampanias>div>button:hover{
+    background-color:var(--color-dorado);
+}
+
+@media screen and (max-width:750px){
+    #contenedorcampanias>div{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #contenedorcampanias>div>button{
+        margin-left:0;
+        width: 20rem;
+    }
+}

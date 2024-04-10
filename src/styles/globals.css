@@ -7,6 +7,7 @@
     --color-dorado-oscuro: #9c8364;
     --color-gris-claro: #d1ccc9;
     --color-gris-oscuro: #676767;
+    --color-gris-oscuro-plus: #333334;
 }
 
 *{
@@ -21,6 +22,7 @@ html, body{
     flex-direction: column;
     height:100vh;
     margin: 0;
+    min-width: 360px;
   }
 
 #__next{

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className={style.header}>
         <Image
-            src="/images/logo_prime.png"
+            src="/images/logo_prime_blanco.png"
             width={260/2}
             height={101/2}
             alt="logotipo prime invest"
