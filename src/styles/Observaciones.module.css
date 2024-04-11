@@ -1,0 +1,11 @@
+div.contenedorObservaciones{
+    background-color: var(--color-azul-oscuro);
+    color:white;
+    padding:2rem;
+   
+}
+
+div.datosObservaciones{
+    padding-top:2rem;
+
+}
