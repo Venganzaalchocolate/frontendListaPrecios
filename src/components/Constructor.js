@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react'
-
 import styles from "../styles/Constructor.module.css"; 
 
 //Función que busca una imagen la cual coincide con el id
@@ -23,11 +22,10 @@ export default function Constructor({idCampania}) {
  const imagenPNGExiste = imagenExiste(imagenPath);
 
  //Retornamos dependiendo de si existe o no.
- if (imagenPNGExiste) {
+ if (imagenExiste(imagenPath)) {
   return (
-      <div>
-          
-          <Image src={imagenPath} alt="Imagen de la campaña" width={500} height={500} />
+      <div className={styles.contenedor}>
+          <img src={imagenPath} alt="Imagen de la campaña" />
       </div>
   );
 } else {
