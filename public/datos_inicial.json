@@ -4,7 +4,17 @@
       "nombreCampania": "OCYAN VILLAS",
       "dato1": "Valor de dato1 para OCYAN VILLAS",
       "dato2": "Valor de dato2 para OCYAN VILLAS",
-      "dato3": "Valor de dato3 para OCYAN VILLAS"
+      "dato3": "Valor de dato3 para OCYAN VILLAS",
+      "comments":{
+        "dato1": "Valor de dato1 para OCYAN VILLAS",
+        "dato2": "Valor de dato2 para OCYAN VILLAS",
+        "dato3": "Valor de dato3 para OCYAN VILLAS"
+      },
+      "observaciones":{
+        "dato1": "Valor de dato1 para OCYAN VILLAS",
+        "dato2": "Valor de dato2 para OCYAN VILLAS",
+        "dato3": "Valor de dato3 para OCYAN VILLAS"
+      }
   },
   {
       "idCampania": "2012771000096574157",

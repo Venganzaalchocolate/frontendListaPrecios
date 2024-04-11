@@ -10,6 +10,9 @@ import Listaprecios from "@/components/Listaprecios";
 import Tabla from "@/components/Tabla";
 import Constructor from "@/components/Constructor";
 import Observaciones from "@/components/Observaciones";
+import Pdf from "@/components/Pdfcreator";
+import {PDFDownloadLink} from '@react-pdf/renderer';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +20,10 @@ export default function Home({ data }) {
   const [cam, setstatecam] = useState("");
   const [pis, setstatepis] = useState("");
 
-  const addCampania = (campania) => {
-    console.log(pis);
-    setstatecam(campania);
-    fetchData(campania);
-  };
+  const addCampania=(campania)=>{
+    setstatecam(campania)
+    fetchData(campania)
+  }
 
   const fetchData = async (cam) => {
     try {
@@ -34,20 +36,31 @@ export default function Home({ data }) {
       const data = await response.json();
       setstatepis(data);
     } catch (error) {
-      console.error("Error al obtener los datos:", error);
+      setstatepis([])
+      console.error('Error al obtener los datos:', error);
     }
   };
 
-  const mostrarPrecios = () => {
-    if (cam != "") {
-      return (
-        <div>
-          <Constructor idCampania={cam}></Constructor>
+  const mostrarPrecios=()=>{
+    if(cam!=''){
+      return <div>
+         <div id="cabeceramostrarprecios">
+         <Constructor idCampania={cam}></Constructor>
           <Tabla idCampania={cam}></Tabla>
-          <Listaprecios pis={pis}></Listaprecios>
-          <Observaciones idCampania={cam}></Observaciones>
+          </div>
+          <div id="contenedorBotonPDF">
+          <PDFDownloadLink className="botonpdf" document={<Pdf cam={cam} pisos={pis}></Pdf>} fileName="Lista de precios">
+            {({ blob, url, loading, error }) =>
+              loading ? 'LOADING...' : 'DESCARGAR PDF'
+            }
+        </PDFDownloadLink>
         </div>
-      );
+
+        <Listaprecios pis={pis}></Listaprecios>
+        <Observaciones idCampania={cam}></Observaciones>
+      </div>
+      
+     
     }
   };
 
