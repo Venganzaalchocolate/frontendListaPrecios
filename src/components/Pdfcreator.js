@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
         paddingLeft: '5px',
         
     },
+    foto: {
+        maxHeight:'200px',
+        width:'auto'
+    }
     
 });
 
@@ -47,7 +51,7 @@ const Pdf = ({ pisos, cam }) => {
     const ponerlogo=(path)=>{
         if (imagenExiste(path)){
             return <View>
-                <Image src={path}/>
+                <Image style={styles.foto} src={path}/>
             </View>
         }
     }
