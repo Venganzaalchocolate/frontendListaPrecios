@@ -1,87 +1,88 @@
-div#contenedorlista{
-    background-color: var(--color-azul-oscuro);
-    padding:1rem 0;
-
+div#contenedorlista {
+  background-color: var(--color-azul-oscuro);
+  padding: 1rem 0;
 }
 
-div.tarjeta{
-	background-color:white;
-    padding: 1rem;
-    margin:1rem;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-   
-   }
-
-.tituloCampania{
-	margin-top:2rem;
-    color: white;
-    font-size:30pt;
+div.tarjeta {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.textoPrincipal{
-	display:flex;
-    flex-wrap:wrap;
-    letter-spacing:0.2rem;
-    border-bottom:2px solid var(--color-gris-claro)
+.tituloCampania {
+  margin-top: 2rem;
+  color: white;
+  font-size: 30pt;
 }
 
-.textoPrincipal>label{
-	flex:50%;
-    font-size: 12pt;
+.textoPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 0.2rem;
+  border-bottom: 2px solid var(--color-gris-claro);
 }
 
-.textoPrincipal>p{
-    flex:50%;
-	font-weight:bold;
-    color:  var(--color-dorado);
-	font-size: 20pt;
-    margin-bottom:1rem;
+.textoPrincipal > label {
+  flex: 50%;
+  font-size: 12pt;
 }
 
-.nombre{
-	font-size: 30pt;
+.textoPrincipal > p {
+  flex: 50%;
+  font-weight: bold;
+  color: var(--color-dorado);
+  font-size: 20pt;
+  margin-bottom: 1rem;
+}
+
+.nombre {
+  font-size: 30pt;
 }
 
 /* .precio{
 	color: #005896;
 } */
 
-.datos{
-	display:flex;
-    letter-spacing: 0.1rem;
+.datos {
+  display: flex;
+  letter-spacing: 0.1rem;
   color: var(--color-azul-oscuro);
 }
 
-.datos>div{
-	display: flex;
-  	align-items: end;
-    padding: 0.5rem;
+.datos > div {
+  display: flex;
+  align-items: end;
+  padding: 0.5rem;
 }
 
-.datos>:nth-child(1){
-    padding-left: 0;
+.datos > :nth-child(1) {
+  padding-left: 0;
 }
 
+/* DISPOSITIVO MÓVIL 
+10pt */
 
-/* DISPOSITIVO MÓVIL */
+@media screen and (max-width: 750px) {
+  .textoPrincipal {
+    letter-spacing: 0;
+  }
 
-@media screen and (max-width:750px) {
- 
-   
-    .datos{
-    display:flex;
-        flex-wrap:wrap;
-        gap: 3px;
-    }
+  
 
-    .datos>div{
-        padding: 0;
-    }
-    
-    div.datos>div{
+  .datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    letter-spacing: 0;
+    font-size: 10pt;
+  }
+
+  .datos > div {
+    padding: 0;
+  }
+
+  div.datos > div {
     flex: 49%;
-    }
- 
+  }
 }
-
-
