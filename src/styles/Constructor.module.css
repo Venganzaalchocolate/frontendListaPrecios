@@ -1,0 +1,10 @@
+.contenedor {
+    width: 200px; /* Ancho deseado del contenedor */
+    max-height: 200px; /* Alto deseado del contenedor */
+    overflow: hidden; /* Para ocultar partes de la imagen que no caben */
+    padding: 1rem;
+    flex:1;
+    display: flex;
+    max-height: 200px;
+    align-content: center;
+  }

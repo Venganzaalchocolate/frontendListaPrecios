@@ -9,6 +9,8 @@ import Campanias from "@/components/Campanias";
 import Listaprecios from "@/components/Listaprecios";
 import Tabla from "@/components/Tabla";
 import Constructor from "@/components/Constructor";
+import Pdf from "@/components/Pdfcreator";
+import {PDFDownloadLink} from '@react-pdf/renderer';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +20,6 @@ export default function Home({data}) {
   const [pis, setstatepis] = useState('');
 
   const addCampania=(campania)=>{
-    console.log(pis)
     setstatecam(campania)
     fetchData(campania)
   }
@@ -32,6 +33,7 @@ export default function Home({data}) {
       const data = await response.json();
       setstatepis(data)
     } catch (error) {
+      setstatepis([])
       console.error('Error al obtener los datos:', error);
     }
   };
@@ -39,8 +41,19 @@ export default function Home({data}) {
   const mostrarPrecios=()=>{
     if(cam!=''){
       return <div>
-        {/* <Constructor idCampania={cam}></Constructor> */}
-        <Tabla idCampania={cam}></Tabla>
+        <div id="cabeceramostrarprecios">
+          <Constructor idCampania={cam}></Constructor>
+          <Tabla idCampania={cam}></Tabla>
+        </div>
+        <div id="contenedorBotonPDF">
+          <PDFDownloadLink className="botonpdf" document={<Pdf cam={cam} pisos={pis}></Pdf>} fileName="Lista de precios">
+            {({ blob, url, loading, error }) =>
+              loading ? 'LOADING...' : 'DESCARGAR PDF'
+            }
+        </PDFDownloadLink>
+        </div>
+        
+        
         <Listaprecios pis={pis}></Listaprecios>
       </div>
       
