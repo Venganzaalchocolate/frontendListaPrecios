@@ -1,206 +1,681 @@
 [
   {
-      "idCampania": "2012771000129092001",
-      "nombreCampania": "OCYAN VILLAS",
-      "dato1": "Valor de dato1 para OCYAN VILLAS",
-      "dato2": "Valor de dato2 para OCYAN VILLAS",
-      "dato3": "Valor de dato3 para OCYAN VILLAS"
-  },
- 
-  {
-      "idCampania": "2012771000126829040",
-      "nombreCampania": "BLISS HOMES",
-      "dato1": "Valor de dato1 para BLISS HOMES",
-      "dato2": "Valor de dato2 para BLISS HOMES",
-      "dato3": "Valor de dato3 para BLISS HOMES"
-  },
-  {
-      "idCampania": "2012771000100148402",
-      "nombreCampania": "BAYSIDE HOMES",
-      "dato1": "Valor de dato1 para BAYSIDE HOMES",
-      "dato2": "Valor de dato2 para BAYSIDE HOMES",
-      "dato3": "Valor de dato3 para BAYSIDE HOMES"
-  },
-  {
-      "idCampania": "2012771000113235001",
-      "nombreCampania": "MARINA GOLDEN BAY",
-      "dato1": "Valor de dato1 para MARINA GOLDEN BAY",
-      "dato2": "Valor de dato2 para MARINA GOLDEN BAY",
-      "dato3": "Valor de dato3 para MARINA GOLDEN BAY"
+    "idCampania": "2012771000129092001",
+    "nombreCampania": "OCYAN VILLAS",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para OCYAN VILLASValor de dato1 para OCYAN VILLASValor de dato1 para OCYAN VILLASValor de dato1 para OCYAN VILLAS",
+      "prueba": "Valor de dato2 para OCYAN VILLAS",
+      "linea3": "Valor de dato3 para OCYAN VILLAS",
+      "linea4": "Valor de dato3 para OCYAN VILLAS",
+      "linea5": "Valor de dato3 para OCYAN VILLAS"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000073242013",
-      "nombreCampania": "JARDINES DE LAS LAGUNAS II",
-      "dato1": "Valor de dato1 para JARDINES DE LAS LAGUNAS II",
-      "dato2": "Valor de dato2 para JARDINES DE LAS LAGUNAS II",
-      "dato3": "Valor de dato3 para JARDINES DE LAS LAGUNAS II"
+    "idCampania": "2012771000126829040",
+    "nombreCampania": "BLISS HOMES",
+    "contenidotabla": {
+      "FECHA APROBACIÓN PRECIOS": "06/02/2024",
+      "NOMBRE EMPRESA COMERCIALIZADORA": "PRIME INVEST",
+      "PROPIEDAD": "NEINOR SUR",
+      "CÓDIGO PRINEX PROMOCIÓN": "4177",
+      "TIPO DE IMPUESTO": "IVA",
+      "OBRA TERMINADA/EN CURSO": "EN CURSO",
+      "DELEGACIÓN": "SUR ESTE"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000128267151",
-      "nombreCampania": "VISTASUR NEVADA",
-      "dato1": "Valor de dato1 para VISTASUR NEVADA",
-      "dato2": "Valor de dato2 para VISTASUR NEVADA",
-      "dato3": "Valor de dato3 para VISTASUR NEVADA"
+    "idCampania": "2012771000100148402",
+    "nombreCampania": "BAYSIDE HOMES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para BAYSIDE HOMES",
+      "linea2": "Valor de dato2 para BAYSIDE HOMES",
+      "linea3": "Valor de dato3 para BAYSIDE HOMES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000104187216",
-      "nombreCampania": "SANTA CLARA HOMES",
-      "dato1": "Valor de dato1 para SANTA CLARA HOMES",
-      "dato2": "Valor de dato2 para SANTA CLARA HOMES",
-      "dato3": "Valor de dato3 para SANTA CLARA HOMES"
+    "idCampania": "2012771000113235001",
+    "nombreCampania": "MARINA GOLDEN BAY",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para MARINA GOLDEN BAY",
+      "linea2": "Valor de dato2 para MARINA GOLDEN BAY",
+      "linea3": "Valor de dato3 para MARINA GOLDEN BAY"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000098779166",
-      "nombreCampania": "MANE RESIDENCES",
-      "dato1": "Valor de dato1 para MANE RESIDENCES",
-      "dato2": "Valor de dato2 para MANE RESIDENCES",
-      "dato3": "Valor de dato3 para MANE RESIDENCES"
+    "idCampania": "2012771000073242013",
+    "nombreCampania": "JARDINES DE LAS LAGUNAS II",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para JARDINES DE LAS LAGUNAS II",
+      "linea2": "Valor de dato2 para JARDINES DE LAS LAGUNAS II",
+      "linea3": "Valor de dato3 para JARDINES DE LAS LAGUNAS II"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000104529139",
-      "nombreCampania": "ELYSEA SUITES",
-      "dato1": "Valor de dato1 para ELYSEA SUITES",
-      "dato2": "Valor de dato2 para ELYSEA SUITES",
-      "dato3": "Valor de dato3 para ELYSEA SUITES"
+    "idCampania": "2012771000128267151",
+    "nombreCampania": "VISTASUR NEVADA",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para VISTASUR NEVADA",
+      "linea2": "Valor de dato2 para VISTASUR NEVADA",
+      "linea3": "Valor de dato3 para VISTASUR NEVADA"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000115562095",
-      "nombreCampania": "RESALES/REVENTAS",
-      "dato1": "Valor de dato1 para RESALES/REVENTAS",
-      "dato2": "Valor de dato2 para RESALES/REVENTAS",
-      "dato3": "Valor de dato3 para RESALES/REVENTAS"
+    "idCampania": "2012771000104187216",
+    "nombreCampania": "SANTA CLARA HOMES",
+    "contenidotabla": {
+      "Fecha Aprobación Precios": "/ /2024 ",
+      "Nombre Empresa Comercializadora": "PRIME INVEST",
+      "Propiedad": "NEINOR SUR",
+      "CÓDIGO PRINEX PROMOCIÓN": "233333456432",
+      "TIPO DE IMPUESTO": "IVA",
+      "OBRA TERMINADA/EN CURSO": "no",
+      "DELEGACIÓN": "Dato ficticio"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000090752347",
-      "nombreCampania": "MESAS HOMES II",
-      "dato1": "Valor de dato1 para MESAS HOMES II",
-      "dato2": "Valor de dato2 para MESAS HOMES II",
-      "dato3": "Valor de dato3 para MESAS HOMES II"
+    "idCampania": "2012771000098779166",
+    "nombreCampania": "MANE RESIDENCES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para MANE RESIDENCES",
+      "linea2": "Valor de dato2 para MANE RESIDENCES",
+      "linea3": "Valor de dato3 para MANE RESIDENCES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000077853015",
-      "nombreCampania": "DUNIQUE MARBELLA",
-      "dato1": "Valor de dato1 para DUNIQUE MARBELLA",
-      "dato2": "Valor de dato2 para DUNIQUE MARBELLA",
-      "dato3": "Valor de dato3 para DUNIQUE MARBELLA"
+    "idCampania": "2012771000104529139",
+    "nombreCampania": "ELYSEA SUITES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para ELYSEA SUITES",
+      "linea2": "Valor de dato2 para ELYSEA SUITES",
+      "linea3": "Valor de dato3 para ELYSEA SUITES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000077805276",
-      "nombreCampania": "EVERGREEN HOMES",
-      "dato1": "Valor de dato1 para EVERGREEN HOMES",
-      "dato2": "Valor de dato2 para EVERGREEN HOMES",
-      "dato3": "Valor de dato3 para EVERGREEN HOMES"
+    "idCampania": "2012771000115562095",
+    "nombreCampania": "RESALES/REVENTAS",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para RESALES/REVENTAS",
+      "linea2": "Valor de dato2 para RESALES/REVENTAS",
+      "linea3": "Valor de dato3 para RESALES/REVENTAS"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000077297197",
-      "nombreCampania": "CELERE SEA VIEWS",
-      "dato1": "Valor de dato1 para CELERE SEA VIEWS",
-      "dato2": "Valor de dato2 para CELERE SEA VIEWS",
-      "dato3": "Valor de dato3 para CELERE SEA VIEWS"
+    "idCampania": "2012771000090752347",
+    "nombreCampania": "MESAS HOMES II",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para MESAS HOMES II",
+      "linea2": "Valor de dato2 para MESAS HOMES II",
+      "linea3": "Valor de dato3 para MESAS HOMES II"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000032687019",
-      "nombreCampania": "MARBELLA SUNSET",
-      "dato1": "Valor de dato1 para MARBELLA SUNSET",
-      "dato2": "Valor de dato2 para MARBELLA SUNSET",
-      "dato3": "Valor de dato3 para MARBELLA SUNSET"
+    "idCampania": "2012771000077853015",
+    "nombreCampania": "DUNIQUE MARBELLA",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para DUNIQUE MARBELLA",
+      "linea2": "Valor de dato2 para DUNIQUE MARBELLA",
+      "linea3": "Valor de dato3 para DUNIQUE MARBELLA"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
+  },
+
+  {
+    "idCampania": "2012771000077805276",
+    "nombreCampania": "EVERGREEN HOMES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para EVERGREEN HOMES",
+      "linea2": "Valor de dato2 para EVERGREEN HOMES",
+      "linea3": "Valor de dato3 para EVERGREEN HOMES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000027497034",
-      "nombreCampania": "THE SAPPHIRE",
-      "dato1": "Valor de dato1 para THE SAPPHIRE",
-      "dato2": "Valor de dato2 para THE SAPPHIRE",
-      "dato3": "Valor de dato3 para THE SAPPHIRE"
+    "idCampania": "2012771000077297197",
+    "nombreCampania": "CELERE SEA VIEWS",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para CELERE SEA VIEWS",
+      "linea2": "Valor de dato2 para CELERE SEA VIEWS",
+      "linea3": "Valor de dato3 para CELERE SEA VIEWS"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000027497001",
-      "nombreCampania": "ALCAZABA LAGOON IV",
-      "dato1": "Valor de dato1 para ALCAZABA LAGOON IV",
-      "dato2": "Valor de dato2 para ALCAZABA LAGOON IV",
-      "dato3": "Valor de dato3 para ALCAZABA LAGOON IV"
+    "idCampania": "2012771000032687019",
+    "nombreCampania": "MARBELLA SUNSET",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para MARBELLA SUNSET",
+      "linea2": "Valor de dato2 para MARBELLA SUNSET",
+      "linea3": "Valor de dato3 para MARBELLA SUNSET"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000001769027",
-      "nombreCampania": "JARDINES DE LAS LAGUNAS",
-      "dato1": "Valor de dato1 para JARDINES DE LAS LAGUNAS",
-      "dato2": "Valor de dato2 para JARDINES DE LAS LAGUNAS",
-      "dato3": "Valor de dato3 para JARDINES DE LAS LAGUNAS"
+    "idCampania": "2012771000027497034",
+    "nombreCampania": "THE SAPPHIRE",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para THE SAPPHIRE",
+      "linea2": "Valor de dato2 para THE SAPPHIRE",
+      "linea3": "Valor de dato3 para THE SAPPHIRE"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000021463245",
-      "nombreCampania": "MESAS HOMES",
-      "dato1": "Valor de dato1 para MESAS HOMES",
-      "dato2": "Valor de dato2 para MESAS HOMES",
-      "dato3": "Valor de dato3 para MESAS HOMES"
+    "idCampania": "2012771000027497001",
+    "nombreCampania": "ALCAZABA LAGOON IV",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para ALCAZABA LAGOON IV",
+      "linea2": "Valor de dato2 para ALCAZABA LAGOON IV",
+      "linea3": "Valor de dato3 para ALCAZABA LAGOON IV"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000027497007",
-      "nombreCampania": "BIG BLUE",
-      "dato1": "Valor de dato1 para BIG BLUE",
-      "dato2": "Valor de dato2 para BIG BLUE",
-      "dato3": "Valor de dato3 para BIG BLUE"
+    "idCampania": "2012771000001769027",
+    "nombreCampania": "JARDINES DE LAS LAGUNAS",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para JARDINES DE LAS LAGUNAS",
+      "linea2": "Valor de dato2 para JARDINES DE LAS LAGUNAS",
+      "linea3": "Valor de dato3 para JARDINES DE LAS LAGUNAS"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000027497019",
-      "nombreCampania": "ARTOLA HOMES",
-      "dato1": "Valor de dato1 para ARTOLA HOMES",
-      "dato2": "Valor de dato2 para ARTOLA HOMES",
-      "dato3": "Valor de dato3 para ARTOLA HOMES"
+    "idCampania": "2012771000021463245",
+    "nombreCampania": "MESAS HOMES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para MESAS HOMES",
+      "linea2": "Valor de dato2 para MESAS HOMES",
+      "linea3": "Valor de dato3 para MESAS HOMES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000092936017",
-      "nombreCampania": "EDIFICIO ESPAÑA",
-      "dato1": "Valor de dato1 para EDIFICIO ESPAÑA",
-      "dato2": "Valor de dato2 para EDIFICIO ESPAÑA",
-      "dato3": "Valor de dato3 para EDIFICIO ESPAÑA"
+    "idCampania": "2012771000027497007",
+    "nombreCampania": "BIG BLUE",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para BIG BLUE",
+      "linea2": "Valor de dato2 para BIG BLUE",
+      "linea3": "Valor de dato3 para BIG BLUE"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000036272011",
-      "nombreCampania": "CORALLISA",
-      "dato1": "Valor de dato1 para CORALLISA",
-      "dato2": "Valor de dato2 para CORALLISA",
-      "dato3": "Valor de dato3 para CORALLISA"
+    "idCampania": "2012771000027497019",
+    "nombreCampania": "ARTOLA HOMES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para ARTOLA HOMES",
+      "linea2": "Valor de dato2 para ARTOLA HOMES",
+      "linea3": "Valor de dato3 para ARTOLA HOMES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000008923009",
-      "nombreCampania": "THE CAPE",
-      "dato1": "Valor de dato1 para THE CAPE",
-      "dato2": "Valor de dato2 para THE CAPE",
-      "dato3": "Valor de dato3 para THE CAPE"
+    "idCampania": "2012771000092936017",
+    "nombreCampania": "EDIFICIO ESPAÑA",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para EDIFICIO ESPAÑA",
+      "linea2": "Valor de dato2 para EDIFICIO ESPAÑA",
+      "linea3": "Valor de dato3 para EDIFICIO ESPAÑA"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000000659019",
-      "nombreCampania": "DARYA ESTEPONA",
-      "dato1": "Valor de dato1 para DARYA ESTEPONA",
-      "dato2": "Valor de dato2 para DARYA ESTEPONA",
-      "dato3": "Valor de dato3 para DARYA ESTEPONA"
+    "idCampania": "2012771000036272011",
+    "nombreCampania": "CORALLISA",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para CORALLISA",
+      "linea2": "Valor de dato2 para CORALLISA",
+      "linea3": "Valor de dato3 para CORALLISA"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000016982007",
-      "nombreCampania": "NAVIGOLF SUITES",
-      "dato1": "Valor de dato1 para NAVIGOLF SUITES",
-      "dato2": "Valor de dato2 para NAVIGOLF SUITES",
-      "dato3": "Valor de dato3 para NAVIGOLF SUITES"
+    "idCampania": "2012771000008923009",
+    "nombreCampania": "THE CAPE",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para THE CAPE",
+      "linea2": "Valor de dato2 para THE CAPE",
+      "linea3": "Valor de dato3 para THE CAPE"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
+  },
+
+  {
+    "idCampania": "2012771000000659019",
+    "nombreCampania": "DARYA ESTEPONA",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para DARYA ESTEPONA",
+      "linea2": "Valor de dato2 para DARYA ESTEPONA",
+      "linea3": "Valor de dato3 para DARYA ESTEPONA"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000001926005",
-      "nombreCampania": "LAR BAY",
-      "dato1": "Valor de dato1 para LAR BAY",
-      "dato2": "Valor de dato2 para LAR BAY",
-      "dato3": "Valor de dato3 para LAR BAY"
+    "idCampania": "2012771000016982007",
+    "nombreCampania": "NAVIGOLF SUITES",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para NAVIGOLF SUITES",
+      "linea2": "Valor de dato2 para NAVIGOLF SUITES",
+      "linea3": "Valor de dato3 para NAVIGOLF SUITES"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000010195007",
-      "nombreCampania": "NAVIGOLF IV",
-      "dato1": "Valor de dato1 para NAVIGOLF IV",
-      "dato2": "Valor de dato2 para NAVIGOLF IV",
-      "dato3": "Valor de dato3 para NAVIGOLF IV"
+    "idCampania": "2012771000001926005",
+    "nombreCampania": "LAR BAY",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para LAR BAY",
+      "linea2": "Valor de dato2 para LAR BAY",
+      "linea3": "Valor de dato3 para LAR BAY"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   },
   {
-      "idCampania": "2012771000040839001",
-      "nombreCampania": "Todas las promociones",
-      "dato1": "Valor de dato1 para Todas las promociones",
-      "dato2": "Valor de dato2 para Todas las promociones",
-      "dato3": "Valor de dato3 para Todas las promociones"
+    "idCampania": "2012771000010195007",
+    "nombreCampania": "NAVIGOLF IV",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para NAVIGOLF IV",
+      "linea2": "Valor de dato2 para NAVIGOLF IV",
+      "linea3": "Valor de dato3 para NAVIGOLF IV"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
+  },
+  {
+    "idCampania": "2012771000040839001",
+    "nombreCampania": "Todas las promociones",
+    "contenidotabla": {
+      "linea1": "Valor de dato1 para Todas las promociones",
+      "linea2": "Valor de dato2 para Todas las promociones",
+      "linea3": "Valor de dato3 para Todas las promociones"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado."
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
   }
 ]
