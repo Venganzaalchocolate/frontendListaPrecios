@@ -12,7 +12,9 @@ export default function Tabla({ idCampania }) {
     const contenidoTabla = campania.contenidotabla;
     const lineasTabla = Object.keys(contenidoTabla);
     return (
-      <div className={styles.contenedorTabla}>
+      <div className={styles.prueba}>
+
+        <div className={styles.contenedorTabla}>
         <div className={styles.datosTitulo}>
           Datos - {campania.nombreCampania}
         </div>
@@ -26,6 +28,8 @@ export default function Tabla({ idCampania }) {
           ))}
         </div>
       </div>
+      </div>
+      
     );
   } else {
     console.log("No existe contenido tabla");
