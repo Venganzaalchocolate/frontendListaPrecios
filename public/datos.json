@@ -3,11 +3,40 @@
     "idCampania": "2012771000129092001",
     "nombreCampania": "OCYAN VILLAS",
     "contenidotabla": {
-      "linea1": "Valor de dato1 para OCYAN VILLASValor de dato1 para OCYAN VILLASValor de dato1 para OCYAN VILLASValor de dato1 para OCYAN VILLAS",
-      "prueba": "Valor de dato2 para OCYAN VILLAS",
-      "linea3": "Valor de dato3 para OCYAN VILLAS",
-      "linea4": "Valor de dato3 para OCYAN VILLAS",
-      "linea5": "Valor de dato3 para OCYAN VILLAS"
+      "FECHA APROBACIÓN PRECIOS": "06/02/2024",
+      "NOMBRE EMPRESA COMERCIALIZADORA": "PRIME INVEST",
+      "PROPIEDAD": "SUR",
+      "CÓDIGO PRINEX PROMOCIÓN": "4177",
+      "TIPO DE IMPUESTO": "IVA",
+      "OBRA TERMINADA/EN CURSO": "EN CURSO",
+      "DELEGACIÓN": "SUR ESTE"
+    },
+    "observaciones": {
+      "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
+      "linea2": "2.- Esta lista de precios cancela cualquier lista previa. En amarillo ap.tos reservados",
+      "linea3": "3.- Los precios facilitados son precios netos, es decir, no incluyen impuestos (IVA).",
+      "linea4": "4.- El vendedor se reserva el derecho de modificar sin previo aviso la presente lista de precios",
+      "linea5": "5.- El piso piloto (*) se vende con muebles incluidos y no se permite vender por separado. "
+    },
+    "comments": {
+      "linea1": "1.- This price list is distributed as information and does not form par of any contract and will be valid only during the date especified in this document",
+      "linea2": "2.- This price list invalid any previous one. In yellow apartments reserved",
+      "linea3": "3.- Prices are subjeted to IVA",
+      "linea4": "4.- The vendor reserves the right to adapt prices withour prior notice before receipt of a deposit.",
+      "linea5": "5.- Show Flat (*) includes furniture in the price and is not allowed to sell separately"
+    }
+  },
+  {
+    "idCampania": "2012771000096574157",
+    "nombreCampania": "LYRA RESIDENCES",
+    "contenidotabla": {
+      "FECHA APROBACIÓN PRECIOS": "06/02/2024",
+      "NOMBRE EMPRESA COMERCIALIZADORA": "PRIME INVEST",
+      "PROPIEDAD": "SUR",
+      "CÓDIGO PRINEX PROMOCIÓN": "4177",
+      "TIPO DE IMPUESTO": "IVA",
+      "OBRA TERMINADA/EN CURSO": "EN CURSO",
+      "DELEGACIÓN": "SUR ESTE"
     },
     "observaciones": {
       "linea1": "1.- Lista de precio facilitada con carácter informativo, no forma parte de ningún contrato y tiene validéz únicamente en la fecha que figura en el encabezado",
