@@ -7,13 +7,15 @@ export default function Listaprecios({ pis }) {
     return (
       <div id={styles.contenedorlista}>
         {pis.map((casa,index ) => {
+          //
+          const precioFormateado=casa.precioPropiedad.toLocaleString();
           return (
             <div key={index} className={styles.tarjeta}>
               <div className={styles.textoPrincipal}>
                 <label>VIVIENDA</label>
                 <label>PRECIO</label>
                 <p className={styles.nombre}>{casa.nombrePropiedad}</p>
-                <p className={styles.precio}>{casa.precioPropiedad} €</p>
+                <p className={styles.precio}>{precioFormateado} €</p>
               </div>
               <div className={styles.datos}>
                 {(casa.bloquePropiedad != null) ?
