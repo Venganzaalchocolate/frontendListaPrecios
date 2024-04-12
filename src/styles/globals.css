@@ -76,3 +76,13 @@ main#mainprincipal{
     padding: 1rem;
     justify-content: center;
 }
+
+@media screen and (max-width:750px) {
+
+ #cabeceramostrarprecios{
+   flex-direction: column;
+
+} 
+
+}
+
