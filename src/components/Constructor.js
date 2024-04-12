@@ -7,7 +7,7 @@ import styles from "../styles/Constructor.module.css";
 export default function Constructor({idCampania}) {
  console.log("buscar idImagen" + idCampania)
  //Construyo ruta de imagen
- const imagenPath= `/images/${idCampania}.png`;
+ const imagenPath= `/images2/${idCampania}.png`;
  
  //Función para check si exxiste
  function imagenExiste(imagen) {
