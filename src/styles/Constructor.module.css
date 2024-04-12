@@ -1,13 +1,17 @@
 .contenedor {
-    width: 200px; /* Ancho deseado del contenedor */
+    width: 400px; /* Ancho deseado del contenedor */
     max-height: 200px; /* Alto deseado del contenedor */
     overflow: hidden; /* Para ocultar partes de la imagen que no caben */
     padding: 1rem;
-    flex:1;
+    padding-left: 2rem;
     display: flex;
-    max-height: 200px;
     align-content: center;
+    align-self: center;
+    justify-content: flex-start;
+
   }
+
+
 
 
   @media screen and (max-width:750px) {
