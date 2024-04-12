@@ -5,3 +5,9 @@
     justify-content: center;
     align-content: center;
 }
+
+
+.header img{
+    width: auto;
+    max-height: 100%;
+}

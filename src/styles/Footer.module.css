@@ -18,6 +18,11 @@
     color: var(--color-dorado);
 }
 
+.footer img{
+    width: auto;
+    max-height: 100%;
+}
+
 .footer>div{
     display: flex;
     flex-direction: row;
