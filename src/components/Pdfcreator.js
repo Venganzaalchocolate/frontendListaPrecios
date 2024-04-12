@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
 import datos from "../../public/datos.json";
-
+import { obtenerFechaHoraActual } from '@/functions/date';
 
 //Función para check si exxiste
 
@@ -69,6 +69,11 @@ const styles = StyleSheet.create({
         fontSize:'25pt',
         borderBottom:'1px solid black',
         paddingTop: '1cm',
+    },
+    fecha:{
+        justifyContent:'flex-end',
+        fontSize:'6pt',
+        textAlign:'right'
     }
 
 });
@@ -123,6 +128,7 @@ const Pdf = ({ pisos, cam }) => {
                 <Page size="A4" style={styles.page}>
                     <View style={styles.encabezado}>
                         {ponerlogo(imagenPath)}
+                        <Text style={styles.fecha}>{obtenerFechaHoraActual()}</Text>
                         {ponercaja(cam)}
                         <Text style={styles.tituloLista}>LISTA DE PRECIOS</Text>
                     </View>
