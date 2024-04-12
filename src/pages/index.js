@@ -4,14 +4,16 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { Layout } from "@/components/Layout";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Campanias from "@/components/Campanias";
 import Listaprecios from "@/components/Listaprecios";
 import Tabla from "@/components/Tabla";
 import Constructor from "@/components/Constructor";
 import Observaciones from "@/components/Observaciones";
 import Pdf from "@/components/Pdfcreator";
-import {PDFDownloadLink} from '@react-pdf/renderer';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import React from "react";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,8 +21,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home({ data }) {
   const [cam, setstatecam] = useState("");
   const [pis, setstatepis] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
-  const addCampania=(campania)=>{
+
+  const addCampania = (campania) => {
     setstatecam(campania)
     fetchData(campania)
   }
@@ -41,26 +45,26 @@ export default function Home({ data }) {
     }
   };
 
-  const mostrarPrecios=()=>{
-    if(cam!=''){
+  const mostrarPrecios = () => {
+    if (cam != '') {
       return <div>
-         <div id="cabeceramostrarprecios">
-         <Constructor idCampania={cam}></Constructor>
+        <div id="cabeceramostrarprecios">
+          <Constructor idCampania={cam}></Constructor>
           <Tabla idCampania={cam}></Tabla>
-          </div>
-          <div id="contenedorBotonPDF">
+        </div>
+        <div id="contenedorBotonPDF">
           <PDFDownloadLink className="botonpdf" document={<Pdf cam={cam} pisos={pis}></Pdf>} fileName="Lista de precios">
             {({ blob, url, loading, error }) =>
               loading ? 'LOADING...' : 'DESCARGAR PDF'
             }
-        </PDFDownloadLink>
+          </PDFDownloadLink>
         </div>
 
         <Listaprecios pis={pis}></Listaprecios>
         <Observaciones idCampania={cam}></Observaciones>
       </div>
-      
-     
+
+
     }
   };
 

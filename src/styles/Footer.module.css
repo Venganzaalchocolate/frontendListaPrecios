@@ -2,7 +2,7 @@
     background-color: var(--color-azul-claro);
     color: white;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
 }

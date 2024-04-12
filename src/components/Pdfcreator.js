@@ -16,15 +16,15 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         fontSize: '11pt',
-        paddingTop: '10px',
-        paddingBottom: '5px',
+        paddingTop: '5px',
+        paddingBottom: '2.5px',
     },
     sectiondos: {
         display: 'flex',
         flexDirection: 'row',
         fontSize: '8pt',
         borderBottom: '1px solid black',
-        paddingBottom: '10px',
+        paddingBottom: '5px',
     },
 
     cajafoto: {
@@ -41,13 +41,34 @@ const styles = StyleSheet.create({
         objectFit: 'contain'
     },
     datosTitulo: {
-        fontSize:'12pt'
+        fontSize:'12pt',
+        backgroundColor:'black',
+        color:'white',
+        textAlign:'center',
+        padding:'10px',
     },
     textocaja:{
-        fontSize: '8pt'
+        alignSelf:'flex-end',
+        fontSize: '8pt',
+        borderColor: 'black',
+        border:'1px',
+        width: '10cm'
     },
     contenedorTabla:{
         border: '1px solid black'
+    },
+    textolinea: {
+        textAlign: 'left',
+        padding: '10px',
+        borderBottom: '1px solid black'
+    },
+    encabezado:{
+        display:'flex'
+    },
+    tituloLista:{
+        fontSize:'25pt',
+        borderBottom:'1px solid black',
+        paddingTop: '1cm',
     }
 
 });
@@ -70,14 +91,14 @@ function ponercaja(idCampania) {
         const contenidoTabla = campania.contenidotabla;
         const lineasTabla = Object.keys(contenidoTabla);
         return (
-            <View className={styles.textocaja}>
-                <Text className={styles.datosTitulo}>
+            <View style={styles.textocaja}>
+                <Text style={styles.datosTitulo}>
                     Datos - {campania.nombreCampania}
                 </Text>
                 <View >
                     {/* Map que recorre, si hay dato lo saca en un div */}
                     {lineasTabla.map((linea, index) => (
-                        <Text className={styles.texto}>{linea}: {contenidoTabla[linea]}</Text>
+                        <Text style={styles.textolinea}>{linea}: {contenidoTabla[linea]}</Text>
                     ))}
                 </View>
             </View>
@@ -86,7 +107,7 @@ function ponercaja(idCampania) {
 }
 
 const Pdf = ({ pisos, cam }) => {
-    const imagenPath = `/images/${cam}.png`;
+    const imagenPath = `/images2/${cam}.png`;
 
     const ponerlogo = (path) => {
         if (imagenExiste(path)) {
@@ -100,11 +121,17 @@ const Pdf = ({ pisos, cam }) => {
         return (
             <Document>
                 <Page size="A4" style={styles.page}>
-                    {ponerlogo(imagenPath)}
-                    {ponercaja(cam)}
+                    <View style={styles.encabezado}>
+                        {ponerlogo(imagenPath)}
+                        {ponercaja(cam)}
+                        <Text style={styles.tituloLista}>LISTA DE PRECIOS</Text>
+                    </View>
+                    
                     {pisos.map((casa) => {
                         return (
-                            <View><View style={styles.section}>
+                            <View>
+                                
+                                <View style={styles.section}>
                                 <Text style={styles.texto}>{casa.nombrePropiedad}</Text>
                                 <Text style={styles.texto}>Precio: {casa.precioPropiedad}</Text>
                                 {(casa.bloquePropiedad != null)

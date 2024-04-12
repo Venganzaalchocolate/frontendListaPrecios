@@ -11,8 +11,8 @@ export default function Footer() {
             </div>
             <Image
                 src="/images/logo_prime_blanco.png"
-                width={1897/8}
-                height={1168/8}
+                width={1897/9}
+                height={1168/9}
                 alt="logotipo prime invest"
             />
         </footer>
