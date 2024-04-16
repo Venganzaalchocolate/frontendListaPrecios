@@ -1,51 +1,52 @@
-import React,{useState, useEffect} from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faUpLong } from '@fortawesome/free-solid-svg-icons';
-
+import { faUpLong } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/ScrollToTopButton.module.css";
-// className={styles.boton}
 
- const ScrollToTopButton=() => {
+const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
-
+  // Detectamos el scroll del usuario
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
+      const scrollY = window.scrollY; // Obtenemos la posición del scroll
       if (scrollY > 200) {
-        setIsVisible(true);
+        // Si el scroll está por encima de 200px
+        setIsVisible(true); // Mostramos el botón
       } else {
-        setIsVisible(false);
+        setIsVisible(false); // Ocultamos el botón
       }
     };
 
-    //Añado el evento al cargar
-    window.addEventListener('scroll',handleScroll)
+    // Añadimos el evento 'scroll' al cargar el componente
+    window.addEventListener("scroll", handleScroll);
 
-    //Al momento que haga scroll hacia arribe debe de volver a aparecer.
+    // Eliminamos el evento 'scroll' al desmontar el componente
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-    //Array vacio, aquí indicamos que este componente solo se ejecuta una vez
-    //El equivalente a compoentnDidMount
-  },[]);
+    // Array vacío: indica que el efecto se ejecuta solo una vez después del renderizado inicial
+    // Similar a componentDidMount de React Class Components
+  }, []);
 
-
- 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
+      // Función para hacer scroll hacia arriba
+      top: 0, // Desplazar a la posición superior (top: 0)
+      behavior: "smooth", // Animación suave del scroll
     });
   };
 
   return (
-    <button onClick={scrollToTop} className={styles.boton} style={{ display: isVisible ? 'flex' : 'none' }}>
-     <FontAwesomeIcon icon={faUpLong} />
-  
-      </button>
+    <button
+      onClick={scrollToTop}
+      className={styles.boton}
+      style={{ display: isVisible ? "flex" : "none" }}
+    >
+      <FontAwesomeIcon icon={faUpLong} /> {/* Icono de flecha hacia arriba */}
+    </button>
   );
 };
 
-export default ScrollToTopButton; 
+export default ScrollToTopButton;
