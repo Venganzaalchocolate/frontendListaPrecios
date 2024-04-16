@@ -1,11 +1,8 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
-import { Suspense } from 'react'
 
-
-
+// Define un componente funcional llamado Layout que recibe dos props: title (string) y children (any component).
 export const Layout=({title, children})=> {
   return (
     <>
