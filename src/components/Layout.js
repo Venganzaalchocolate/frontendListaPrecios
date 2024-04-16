@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import { Suspense } from 'react'
-import Loading from '@/pages/loading'
+
 
 
 export const Layout=({title, children})=> {

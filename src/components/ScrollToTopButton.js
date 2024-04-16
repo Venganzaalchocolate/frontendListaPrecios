@@ -1,4 +1,8 @@
 import React,{useState, useEffect} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faUpLong } from '@fortawesome/free-solid-svg-icons';
+
 
 import styles from "../styles/ScrollToTopButton.module.css";
 // className={styles.boton}
@@ -15,8 +19,6 @@ import styles from "../styles/ScrollToTopButton.module.css";
         setIsVisible(false);
       }
     };
-
-    console.log("numero" +scrollY)
 
     //Añado el evento al cargar
     window.addEventListener('scroll',handleScroll)
@@ -39,8 +41,8 @@ import styles from "../styles/ScrollToTopButton.module.css";
   };
 
   return (
-    <button onClick={scrollToTop} className={styles.boton} style={{ display: isVisible ? 'block' : 'none' }}>
-   <FontAwesomeIcon icon="fa-solid fa-up-long" style={{color: "#FFD43B",}} />
+    <button onClick={scrollToTop} className={styles.boton} style={{ display: isVisible ? 'flex' : 'none' }}>
+     <FontAwesomeIcon icon={faUpLong} />
   
       </button>
   );

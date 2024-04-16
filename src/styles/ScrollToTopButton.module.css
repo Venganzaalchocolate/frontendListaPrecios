@@ -2,7 +2,7 @@ button.boton {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color:var(--color-azul-claro-plus);
     color: white;
     border: none;
     border-radius: 50%;
@@ -10,9 +10,17 @@ button.boton {
     height: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    justify-content: center;
+    padding: 6px;
+    align-content: center;
+
   }
   
   button.boton:hover {
     background-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
   }
+
+
+
   
