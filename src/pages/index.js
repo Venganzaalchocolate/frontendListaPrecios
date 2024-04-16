@@ -13,6 +13,7 @@ import Observaciones from "@/components/Observaciones";
 import Pdf from "@/components/Pdfcreator";
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import React from "react";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 
 
@@ -58,6 +59,9 @@ export default function Home({ data }) {
               loading ? 'LOADING...' : 'DESCARGAR PDF'
             }
           </PDFDownloadLink>
+        </div>
+        <div>
+          <ScrollToTopButton></ScrollToTopButton>
         </div>
 
         <Listaprecios pis={pis}></Listaprecios>
