@@ -8,7 +8,10 @@ import Constructor from "@/components/Constructor";
 import Observaciones from "@/components/Observaciones";
 import Pdf from "@/components/Pdfcreator";
 import { PDFDownloadLink } from '@react-pdf/renderer';
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { listaPrecios, obtenerCampaniasActivas } from "@/conexionApi/peticionesApi";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,10 +39,12 @@ export default function Home({ data }) {
               loading ? 'LOADING...' : 'DESCARGAR PDF'}
           </PDFDownloadLink>
         </div>
-        <Suspense fallback={<p>holi</p>}>
-            <Listaprecios pis={pis}></Listaprecios>
-            <Observaciones idCampania={cam}></Observaciones>
-        </Suspense>
+        <div>
+          <ScrollToTopButton></ScrollToTopButton>
+        </div>
+
+        <Listaprecios pis={pis}></Listaprecios>
+        <Observaciones idCampania={cam}></Observaciones>
       </div>
     }
   };
