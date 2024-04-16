@@ -2,9 +2,7 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
 import datos from "../../public/datos.json";
 import { obtenerFechaHoraActual } from '@/functions/date';
-
-//Función para check si exxiste
-
+import { imagenExiste } from '@/functions/pdf';
 
 const styles = StyleSheet.create({
     page: {
@@ -78,19 +76,10 @@ const styles = StyleSheet.create({
 
 });
 
-function imagenExiste(imagen) {
-    try {
-        require(`../../public${imagen}`);
-        return true;
-    } catch (error) {
-        return false;
-    }
-}
+
 
 function ponercaja(idCampania) {
-    
     const campania = datos.find((campania) => campania.idCampania == idCampania);
-    console.log(campania);
     //Si existe la campaña y si existen datos en el registro json
     if (campania && campania.contenidotabla) {
         const contenidoTabla = campania.contenidotabla;
