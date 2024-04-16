@@ -16,35 +16,42 @@ import { listaPrecios, obtenerCampaniasActivas } from "@/conexionApi/peticionesA
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data }) {
-  const [cam, setstatecam] = useState("");
-  const [pis, setstatepis] = useState("");
-  const [loading, setLoading] = useState(true);
+   // Estado para almacenar la campaña seleccionada (inicialmente vacío)
+  const [campaniaSeleccionada, setCampaniaSeleccionada] = useState("");
+   // Estado para almacenar los apartamentos de la campaña seleccionada (inicialmente vacío)
+  const [apartamento, setApartamento] = useState("");
+  
 
   // Simular un tiempo de carga (por ejemplo, una llamada a una API)
   const addCampania = async (campania) => {
-    setstatecam(campania)
-    setstatepis(await listaPrecios(campania))
+    setCampaniaSeleccionada(campania)
+    // Obtiene precios usando la API
+    setApartamento(await listaPrecios(campania))
   }
 
+ // Muestra los detalles de la campaña y los precios solo si hay una campaña seleccionada
   const mostrarPrecios =() => {
-    if (cam != '') {
+    if (campaniaSeleccionada != '') {
       return <div>
+         {/* Muestra los detalles de la campaña seleccionada */}
         <div id="cabeceramostrarprecios">
-          <Constructor idCampania={cam}></Constructor>
-          <Tabla idCampania={cam}></Tabla>
+          <Constructor idCampania={campaniaSeleccionada}></Constructor>
+          <Tabla idCampania={campaniaSeleccionada}></Tabla>
         </div>
         <div id="contenedorBotonPDF">
-          <PDFDownloadLink className="botonpdf" document={<Pdf cam={cam} pisos={pis}></Pdf>} fileName="Lista de precios">
+          <PDFDownloadLink className="botonpdf" document={<Pdf cam={campaniaSeleccionada} pisos={apartamento}></Pdf>} fileName="Lista de precios">
             {({ blob, url, loading, error }) =>
               loading ? 'LOADING...' : 'DESCARGAR PDF'}
           </PDFDownloadLink>
         </div>
         <div>
-          <ScrollToTopButton></ScrollToTopButton>
+           {/* Botón para subir al inicio */}
+          <ScrollToTopButton />
         </div>
-
-        <Listaprecios pis={pis}></Listaprecios>
-        <Observaciones idCampania={cam}></Observaciones>
+        {/* Muestra la lista de precios */}
+        <Listaprecios pis={apartamento}></Listaprecios>
+         {/* Muestra las observaciones de la campaña */}
+        <Observaciones idCampania={campaniaSeleccionada}></Observaciones>
       </div>
     }
   };
@@ -52,6 +59,7 @@ export default function Home({ data }) {
   return (
     <>
       <Layout title={"Lista de precios"}>
+          {/* Componente para seleccionar campañas y agregar la seleccionada a la variable 'campaniaSeleccionada' */}
         <Campanias data={data} addCampania={(x) => addCampania(x)}></Campanias>
         {mostrarPrecios()}
       </Layout>

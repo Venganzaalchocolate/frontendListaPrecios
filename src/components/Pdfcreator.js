@@ -9,7 +9,7 @@ import {
 } from "@react-pdf/renderer";
 import datos from "../../public/datos.json";
 import { obtenerFechaHoraActual } from "@/functions/date";
-import { imagenExiste } from "@/functions/pdf";
+import { compararCasas, imagenExiste } from "@/functions/pdf";
 
 // Estilos para la página y secciones del PDF
 const styles = StyleSheet.create({
@@ -123,6 +123,8 @@ const Pdf = ({ pisos, cam }) => {
 
   // Verificamos si hay pisos para mostrar
   if (pisos != null && pisos != []) {
+      {/* Ordenar el array de acuerdo a la función de comparación */}
+      const pisosOrdenados = [...pisos].sort(compararCasas);
     return (
       <Document>
         <Page size="A4" style={styles.page}>
@@ -134,7 +136,8 @@ const Pdf = ({ pisos, cam }) => {
             <Text style={styles.tituloLista}>LISTA DE PRECIOS</Text>
           </View>
           {/* Recorremos los pisos (propiedades) y mostramos sus detalles */}
-          {pisos.map((casa) => {
+         
+          {pisosOrdenados.map((casa) => {
             return (
               <View>
                 <View style={styles.section}>

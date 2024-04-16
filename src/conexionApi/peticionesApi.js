@@ -1,4 +1,4 @@
-export const listaPrecios = async (cam) => { // Define una función asíncrona llamada listaPrecios que recibe un parámetro "cam".
+export const listaPrecios = async (cam) => { // Define una función asíncrona llamada listaPrecios que recibe un parámetro "cam" referido a campaña.
     try { // Bloque para manejar intentos correctos.
         const response = await fetch( // Realiza una petición HTTP GET asíncrona.
             `http://127.0.0.1:8000/api/obtenercasasdisponibles/${cam}` // URL de la API para obtener casas disponibles, incluyendo el parámetro "cam" en la ruta.
