@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import styles from "../styles/Listaprecios.module.css"; 
 
 
 export default function Listaprecios({ pis }) {
   if(pis!=null && pis!=[]) {
     return (
-      <div id={styles.contenedorlista}>
+      
+        <div id={styles.contenedorlista}>
         {pis.map((casa,index ) => {
           //
           const precioFormateado=casa.precioPropiedad.toLocaleString();
@@ -105,7 +106,10 @@ export default function Listaprecios({ pis }) {
   
         })}
       </div>
-    )
+    
+        
+   
+      )
   } else {
     null
   }
