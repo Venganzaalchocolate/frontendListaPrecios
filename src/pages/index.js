@@ -1,10 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 import { Layout } from "@/components/Layout";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Campanias from "@/components/Campanias";
 import Listaprecios from "@/components/Listaprecios";
 import Tabla from "@/components/Tabla";
@@ -12,40 +8,22 @@ import Constructor from "@/components/Constructor";
 import Observaciones from "@/components/Observaciones";
 import Pdf from "@/components/Pdfcreator";
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import React from "react";
-
-
+import { listaPrecios, obtenerCampaniasActivas } from "@/conexionApi/peticionesApi";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data }) {
   const [cam, setstatecam] = useState("");
   const [pis, setstatepis] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-
-  const addCampania = (campania) => {
+  // Simular un tiempo de carga (por ejemplo, una llamada a una API)
+  const addCampania = async (campania) => {
     setstatecam(campania)
-    fetchData(campania)
+    setstatepis(await listaPrecios(campania))
   }
 
-  const fetchData = async (cam) => {
-    try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/api/obtenercasasdisponibles/${cam}`
-      );
-      if (!response.ok) {
-        throw new Error("Error al obtener los datos");
-      }
-      const data = await response.json();
-      setstatepis(data);
-    } catch (error) {
-      setstatepis([])
-      console.error('Error al obtener los datos:', error);
-    }
-  };
-
-  const mostrarPrecios = () => {
+  const mostrarPrecios =() => {
     if (cam != '') {
       return <div>
         <div id="cabeceramostrarprecios">
@@ -55,22 +33,20 @@ export default function Home({ data }) {
         <div id="contenedorBotonPDF">
           <PDFDownloadLink className="botonpdf" document={<Pdf cam={cam} pisos={pis}></Pdf>} fileName="Lista de precios">
             {({ blob, url, loading, error }) =>
-              loading ? 'LOADING...' : 'DESCARGAR PDF'
-            }
+              loading ? 'LOADING...' : 'DESCARGAR PDF'}
           </PDFDownloadLink>
         </div>
-
-        <Listaprecios pis={pis}></Listaprecios>
-        <Observaciones idCampania={cam}></Observaciones>
+        <Suspense fallback={<p>holi</p>}>
+            <Listaprecios pis={pis}></Listaprecios>
+            <Observaciones idCampania={cam}></Observaciones>
+        </Suspense>
       </div>
-
-
     }
   };
 
   return (
     <>
-      <Layout title={"Prueba front"}>
+      <Layout title={"Lista de precios"}>
         <Campanias data={data} addCampania={(x) => addCampania(x)}></Campanias>
         {mostrarPrecios()}
       </Layout>
@@ -79,9 +55,8 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:8000/api/obtenercampaniasactivas");
-  const data = await res.json();
+  const data = await obtenerCampaniasActivas();
   return {
     props: { data },
-  };
+};
 }
