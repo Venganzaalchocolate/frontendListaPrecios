@@ -94,14 +94,21 @@ export default function Listaprecios({ pis }) {
                 ) : null}
                 {casa.trasteroPropiedad != null ? ( // Si el trastero está definida, muestra la etiqueta y el valor.
                   <div>
-                    <label>Trastero nº: {casa.trasteroPropiedad}</label>
+                    <label>Trasteros: 1</label>
                   </div>
                 ) : null}
-                {casa.plazaPropiedad != null ? ( // Si el numero de plaza de parking está definida, muestra la etiqueta y el valor.
+                {casa.plazaParking2 != null ? ( // Si el numero de plaza de parking está definida, muestra la etiqueta y el valor.
                   <div>
-                    <label>Plaza nº: {casa.plazaPropiedad}</label>
+                    <label>Parkings: 2</label>
                   </div>
-                ) : null}
+                ) : casa.plazaParking1 !=null ?
+                <div>
+                    <label>Parkings: 1</label>
+                  </div>
+                :null
+                }
+
+
               </div>
             </div>
           );
