@@ -17,9 +17,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data }) {
    // Estado para almacenar la campaña seleccionada (inicialmente vacío)
-  const [campaniaSeleccionada, setCampaniaSeleccionada] = useState("");
+  const [campaniaSeleccionada, setCampaniaSeleccionada] = useState('');
    // Estado para almacenar los apartamentos de la campaña seleccionada (inicialmente vacío)
-  const [apartamento, setApartamento] = useState("");
+  const [apartamento, setApartamento] = useState('');
   
 
   // Simular un tiempo de carga (por ejemplo, una llamada a una API)

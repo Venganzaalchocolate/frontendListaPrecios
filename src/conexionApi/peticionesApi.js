@@ -1,7 +1,9 @@
+const config=require('@/config.js')
+
 export const listaPrecios = async (cam) => { // Define una función asíncrona llamada listaPrecios que recibe un parámetro "cam" referido a campaña.
     try { // Bloque para manejar intentos correctos.
         const response = await fetch( // Realiza una petición HTTP GET asíncrona.
-            `http://127.0.0.1:8000/api/obtenercasasdisponibles/${cam}` // URL de la API para obtener casas disponibles, incluyendo el parámetro "cam" en la ruta.
+            `${config}obtenercasasdisponibles/${cam}` // URL de la API para obtener casas disponibles, incluyendo el parámetro "cam" en la ruta.
         );
         if (!response.ok) { // Comprueba si la respuesta de la API es exitosa.
             throw new Error("Error al obtener los datos"); // Si no es exitosa, lanza una excepción con un mensaje de error.
@@ -14,6 +16,6 @@ export const listaPrecios = async (cam) => { // Define una función asíncrona l
 };
 
 export const obtenerCampaniasActivas = async () => { // Define una función asíncrona llamada obtenerCampaniasActivas.
-    const res = await fetch("http://localhost:8000/api/obtenercampaniasactivas"); // Realiza una petición HTTP GET asíncrona a la URL de la API para obtener campañas activas.
+    const res = await fetch(`${config}obtenercampaniasactivas`); // Realiza una petición HTTP GET asíncrona a la URL de la API para obtener campañas activas.
     return await res.json(); // Espera a que la respuesta se convierta en JSON y lo retorna.
 };
