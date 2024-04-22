@@ -6,7 +6,7 @@ import { imagenExiste } from "@/utils/utils";
 // Función que busca una imagen con el id especificado y la renderiza si existe
 export default function Constructor({ idCampania }) {
   // Construimos la ruta de la imagen
-  const imagenPath = `/images2/${idCampania}.png`;
+  const imagenPath = `/images/${idCampania}.png`;
 
   // Verificamos si la imagen PNG existe
   const imagenPNGExiste = imagenExiste(imagenPath);

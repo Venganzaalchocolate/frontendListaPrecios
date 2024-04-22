@@ -88,5 +88,6 @@ main#mainprincipal {
 @media screen and (max-width: 750px) {
   #cabeceramostrarprecios {
     flex-direction: column;
+    align-items: center;
   }
 }

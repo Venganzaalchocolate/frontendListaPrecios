@@ -1,23 +1,23 @@
 import styles from "../styles/Listaprecios.module.css"; // Importa los estilos CSS definidos en el archivo ../styles/Listaprecios.module.css.
 import {ordenarListaPropiedades } from "@/utils/utils";
 
-
-export default function Listaprecios({ pis }) {
-  // Define un componente funcional por defecto llamado Listaprecios que recibe un prop "pis" (un array de datos de viviendas).
+//Función que recibe por parámetro una lista de viviendas las ordena y luego las muestra una por una. 
+export default function Listaprecios({ viviendas }) {
+  // Define un componente funcional por defecto llamado Listaprecios que recibe un prop "viviendas" (un array de datos de viviendas).
   // Comprueba si la lista de pisos no es nulo ni vacío.
-  if (pis != null && pis != []) {
+  if (viviendas != null && viviendas != []) {
     // Ordenar el array de acuerdo a la función de comparación
-    const pisOrdenados = [...pis].sort(ordenarListaPropiedades);
+    const viviendasOrdenadas = [...viviendas].sort(ordenarListaPropiedades);
 
     return (
       // Si el array es válido, retorna el código JSX para renderizar la lista de precios.
       <div id={styles.contenedorlista}>
-        {pisOrdenados.map((casa, index) => {
-          // Recorre el array "pis" con map, asignando cada elemento a la variable "casa" e index al índice actual.
+        {viviendasOrdenadas.map((casa, index) => {
+          // Recorre el array "viviendas" con map, asignando cada elemento a la variable "casa" e index al índice actual.
 
           const precioFormateado = casa.precioPropiedad.toLocaleString(); // Formatea el precio para separarlo con comas.
           return (
-            // Por cada vivienda, retorna una tarjeta individual.
+            // Por cada viviendas, retorna una tarjeta individual.
             <div key={index} className={styles.tarjeta}>
               {" "}
               {/* Crea un div con una clave única y la clase definida en el CSS */}
@@ -25,16 +25,16 @@ export default function Listaprecios({ pis }) {
                 {" "}
                 {/* Crea un div para el texto principal */}
                 <label>VIVIENDA</label>{" "}
-                {/* Etiqueta para el título "VIVIENDA" */}
+                {/* Etiqueta para el título "viviendas" */}
                 <label>PRECIO</label> {/* Etiqueta para el título "PRECIO" */}
                 <p className={styles.nombre}>{casa.nombrePropiedad}</p>{" "}
-                {/* Muestra el nombre de la vivienda */}
+                {/* Muestra el nombre de la viviendas */}
                 <p className={styles.precio}>{precioFormateado} €</p>{" "}
                 {/* Muestra el precio formateado */}
               </div>
               <div className={styles.datos}>
                 {" "}
-                {/* Crea un div para los datos de la vivienda */}
+                {/* Crea un div para los datos de la viviendas */}
                 {casa.bloquePropiedad != null ? ( // Si el bloque está definido, muestra la etiqueta y el valor.
                   <div>
                     <label>Bloque: {casa.bloquePropiedad}</label>

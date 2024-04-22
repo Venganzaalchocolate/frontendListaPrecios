@@ -1,0 +1,77 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5cm;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  font-size: 11pt;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+
+.sectiondos {
+  display: flex;
+  flex-direction: row;
+  font-size: 8pt;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.cajafoto {
+  display: flex;
+  max-height: 100px;
+}
+
+.texto {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.foto {
+  object-fit: contain;
+}
+
+.datosTitulo {
+  font-size: 12pt;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.textocaja {
+  align-self: flex-end;
+  font-size: 8pt;
+  border-color: black;
+  border: 1px;
+  width: 10cm;
+}
+
+.contenedorTabla {
+  border: 1px solid black;
+}
+
+.textolinea {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.encabezado {
+  display: flex;
+}
+
+.tituloLista {
+  font-size: 25pt;
+  border-bottom: 1px solid black;
+  padding-top: 1cm;
+}
+
+.fecha {
+  justify-content: flex-end;
+  font-size: 6pt;
+  text-align: right;
+}

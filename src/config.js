@@ -1,6 +1,6 @@
 const config = {
     development: {
-      apiUrl: 'http://127.0.0.1:8000/api/',
+      apiUrl: 'https://backendlistaprecios.onrender.com/api/',
     },
     production: {
       apiUrl: 'https://backendlistaprecios.onrender.com/api/',

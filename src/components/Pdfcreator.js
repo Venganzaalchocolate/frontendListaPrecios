@@ -9,7 +9,8 @@ import {
 } from "@react-pdf/renderer";
 import datos from "../../public/datos.json";
 import { obtenerFechaHoraActual } from "@/utils/utils";
-import { ordenarListaPropiedadess, imagenExiste } from "@/utils/utils";
+import { ordenarListaPropiedades, imagenExiste } from "@/utils/utils";
+
 
 // Estilos para la página y secciones del PDF
 const styles = StyleSheet.create({
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
 });
 
 // Función para mostrar un recuadro con los datos de una campaña
-function ponercaja(idCampania) {
+function addCaja(idCampania) {
   const campania = datos.find((campania) => campania.idCampania == idCampania);
   // Verificamos si existe la campaña y si hay datos en el registro JSON
   if (campania && campania.contenidotabla) {
@@ -106,12 +107,12 @@ function ponercaja(idCampania) {
   }
 }
 
-// Componente principal del PDF que recibe pisos (propiedades) y la campaña
-const Pdf = ({ pisos, cam }) => {
-  const imagenPath = `/images2/${cam}.png`;
+// Componente principal del PDF que recibe viviendas (propiedades) y la campaña
+const Pdf = ({ viviendas, cam }) => {
+  const imagenPath = `/images/${cam}.png`;
 
   // Función para mostrar el logo si existe la imagen
-  const ponerlogo = (path) => {
+  const addLogotipo = (path) => {
     if (imagenExiste(path)) {
       return (
         <View style={styles.cajafoto}>
@@ -121,21 +122,21 @@ const Pdf = ({ pisos, cam }) => {
     }
   };
 
-  // Verificamos si hay pisos para mostrar
-  if (pisos != null && pisos != []) {
+  // Verificamos si hay viviendas para mostrar
+  if (viviendas != null && viviendas != []) {
       {/* Ordenar el array de acuerdo a la función de comparación */}
-      const pisosOrdenados = [...pisos].sort(ordenarListaPropiedadess);
+      const pisosOrdenados = [...viviendas].sort(ordenarListaPropiedades);
     return (
       <Document>
         <Page size="A4" style={styles.page}>
           {/* Encabezado del PDF con logo, fecha y datos de la campaña */}
           <View style={styles.encabezado}>
-            {ponerlogo(imagenPath)}
+            {addLogotipo(imagenPath)}
             <Text style={styles.fecha}>{obtenerFechaHoraActual()}</Text>
-            {ponercaja(cam)}
+            {addCaja(cam)}
             <Text style={styles.tituloLista}>LISTA DE PRECIOS</Text>
           </View>
-          {/* Recorremos los pisos (propiedades) y mostramos sus detalles */}
+          {/* Recorremos los viviendas (propiedades) y mostramos sus detalles */}
          
           {pisosOrdenados.map((casa,index) => {
             return (
@@ -240,7 +241,7 @@ const Pdf = ({ pisos, cam }) => {
       </Document>
     );
   } else {
-    // Mostramos mensaje de error si no hay pisos para mostrar
+    // Mostramos mensaje de error si no hay viviendas para mostrar
     return (
       <Document>
         <Page size="A4" style={styles.page}>
