@@ -15,14 +15,14 @@ export default function Observaciones({ idCampania }) {
         <div className={styles.datosObservaciones}>
           <div>OBSERVACIONES:</div>
           {lineasObservaciones.map((linea, index) => (
-            <div>{campania.observaciones[linea]}</div>
+            <div key={index}>{campania.observaciones[linea]}</div>
           ))}
         </div>
 
         <div className={styles.datosComments}>
           <div>COMMENTS:</div>
           {lineasComments.map((linea, index) => (
-            <div>{campania.comments[linea]}</div>
+            <div key={index}>{campania.comments[linea]}</div>
           ))}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/Constructor.module.css";
-import { imagenExiste } from "@/functions/pdf";
+import { imagenExiste } from "@/utils/utils";
 
 // Función que busca una imagen con el id especificado y la renderiza si existe
 export default function Constructor({ idCampania }) {

@@ -9,7 +9,7 @@ import Observaciones from "@/components/Observaciones";
 import Pdf from "@/components/Pdfcreator";
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { listaPrecios, obtenerCampaniasActivas } from "@/conexionApi/peticionesApi";
+import { listaPrecios, obtenerCampaniasActivas } from "@/API/services";
 
 
 

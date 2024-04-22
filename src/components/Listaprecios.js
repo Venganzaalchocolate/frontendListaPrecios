@@ -1,14 +1,13 @@
 import styles from "../styles/Listaprecios.module.css"; // Importa los estilos CSS definidos en el archivo ../styles/Listaprecios.module.css.
-import { compararCasas } from "@/functions/pdf";
-//JL2-PK126 & TR126
-//contenga, PK y TR jardines de la laguna
+import {ordenarListaPropiedades } from "@/utils/utils";
+
 
 export default function Listaprecios({ pis }) {
   // Define un componente funcional por defecto llamado Listaprecios que recibe un prop "pis" (un array de datos de viviendas).
   // Comprueba si la lista de pisos no es nulo ni vacío.
   if (pis != null && pis != []) {
     // Ordenar el array de acuerdo a la función de comparación
-    const pisOrdenados = [...pis].sort(compararCasas);
+    const pisOrdenados = [...pis].sort(ordenarListaPropiedades);
 
     return (
       // Si el array es válido, retorna el código JSX para renderizar la lista de precios.

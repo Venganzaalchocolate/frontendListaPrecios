@@ -8,8 +8,8 @@ import {
   Image,
 } from "@react-pdf/renderer";
 import datos from "../../public/datos.json";
-import { obtenerFechaHoraActual } from "@/functions/date";
-import { compararCasas, imagenExiste } from "@/functions/pdf";
+import { obtenerFechaHoraActual } from "@/utils/utils";
+import { ordenarListaPropiedadess, imagenExiste } from "@/utils/utils";
 
 // Estilos para la página y secciones del PDF
 const styles = StyleSheet.create({
@@ -96,7 +96,7 @@ function ponercaja(idCampania) {
         <View>
           {/* Mapeo que recorre las líneas de la tabla y las muestra en el PDF */}
           {lineasTabla.map((linea, index) => (
-            <Text style={styles.textolinea}>
+            <Text key={index} style={styles.textolinea}>
               {linea}: {contenidoTabla[linea]}
             </Text>
           ))}
@@ -124,7 +124,7 @@ const Pdf = ({ pisos, cam }) => {
   // Verificamos si hay pisos para mostrar
   if (pisos != null && pisos != []) {
       {/* Ordenar el array de acuerdo a la función de comparación */}
-      const pisosOrdenados = [...pisos].sort(compararCasas);
+      const pisosOrdenados = [...pisos].sort(ordenarListaPropiedadess);
     return (
       <Document>
         <Page size="A4" style={styles.page}>
@@ -137,10 +137,10 @@ const Pdf = ({ pisos, cam }) => {
           </View>
           {/* Recorremos los pisos (propiedades) y mostramos sus detalles */}
          
-          {pisosOrdenados.map((casa) => {
+          {pisosOrdenados.map((casa,index) => {
             return (
-              <View>
-                <View style={styles.section}>
+              <View key={index}>
+                <View key={index} style={styles.section}>
                   <Text style={styles.texto}>{casa.nombrePropiedad}</Text>
                   <Text style={styles.texto}>
                     Precio: {casa.precioPropiedad.toLocaleString()} €
