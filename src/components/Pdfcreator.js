@@ -10,7 +10,6 @@ import {
 import datos from "../../public/datos.json";
 import { obtenerFechaHoraActual } from "@/utils/utils";
 import { ordenarListaPropiedades, imagenExiste } from "@/utils/utils";
-
 // Estilos para la página y secciones del PDF
 const styles = StyleSheet.create({
   page: {
@@ -32,10 +31,9 @@ const styles = StyleSheet.create({
     borderBottom: "1px solid black",
     paddingBottom: "5px",
   },
-
   cajafoto: {
     display: "flex",
-    maxHeight: "100px",
+    maxWidth: "7cm"
   },
   texto: {
     textAlign: "left",
@@ -57,6 +55,7 @@ const styles = StyleSheet.create({
     borderColor: "black",
     border: "1px",
     width: "10cm",
+    display:'flex'
   },
   contenedorTabla: {
     border: "1px solid black",
@@ -68,6 +67,7 @@ const styles = StyleSheet.create({
   },
   encabezado: {
     display: "flex",
+    flexDirection: "row"
   },
   tituloLista: {
     fontSize: "25pt",
@@ -79,8 +79,14 @@ const styles = StyleSheet.create({
     fontSize: "6pt",
     textAlign: "right",
   },
+  cajaDatos: {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignSelf:"flex-end",
+    alignContent:"flex-end",
+    width:"100%"
+  }
 });
-
 // Función para mostrar un recuadro con los datos de una campaña
 function addCaja(idCampania) {
   const campania = datos.find((campania) => campania.idCampania == idCampania);
@@ -105,11 +111,9 @@ function addCaja(idCampania) {
     );
   }
 }
-
 // Componente principal del PDF que recibe viviendas (propiedades) y la campaña
 const Pdf = ({ viviendas, cam }) => {
   const imagenPath = `/images/${cam}.png`;
-
   // Función para mostrar el logo si existe la imagen
   const addLogotipo = (path) => {
     if (imagenExiste(path)) {
@@ -120,23 +124,25 @@ const Pdf = ({ viviendas, cam }) => {
       );
     }
   };
-
   // Verificamos si hay viviendas para mostrar
   if (viviendas != null && viviendas != []) {
-    {
-      /* Ordenar el array de acuerdo a la función de comparación */
-    }
-    const pisosOrdenados = [...viviendas].sort(ordenarListaPropiedades);
+      {/* Ordenar el array de acuerdo a la función de comparación */}
+      const pisosOrdenados = [...viviendas].sort(ordenarListaPropiedades);
     return (
       <Document>
         <Page size="A4" style={styles.page}>
           {/* Encabezado del PDF con logo, fecha y datos de la campaña */}
           <View style={styles.encabezado}>
             {addLogotipo(imagenPath)}
+            <View style={styles.cajaDatos}>
             <Text style={styles.fecha}>{obtenerFechaHoraActual()}</Text>
             {addCaja(cam)}
-            <Text style={styles.tituloLista}>LISTA DE PRECIOS</Text>
+            </View>
           </View>
+          {/* Recorremos los viviendas (propiedades) y mostramos sus detalles */}
+          <View><Text style={styles.tituloLista}>LISTA DE PRECIOS</Text></View>
+
+
           {/* Recorremos los viviendas (propiedades) y mostramos sus detalles */}
 
           {pisosOrdenados.map((casa, index) => {
