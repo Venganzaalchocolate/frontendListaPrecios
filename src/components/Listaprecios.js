@@ -68,7 +68,7 @@ export default function Listaprecios({ viviendas }) {
                 {casa.metrosPropiedad != null ? ( // Si los metros cuadrados están definidos, muestra la etiqueta y el valor.
                   <div>
                     <label>
-                      Contruidos: {casa.metrosPropiedad} m<sup>2</sup>
+                      Construidos: {casa.metrosPropiedad} m<sup>2</sup>
                     </label>
                   </div>
                 ) : null}

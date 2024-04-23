@@ -20,6 +20,7 @@ export default function Campanias({ data, addCampania }) { // Define un componen
             <div>  {/* Crea otro div contenedor */}
            
                 <select name='cam' value={selectedOption} onChange={handleChange}> {/* Crea un elemento select para la lista desplegable */}
+                <option>Seleccione una campaña</option>
                 {data.map((x,index)=>{ // Recorre el array de datos (data) con map.
                     return <option key={index} value={x.idCampania}>{x.nombreCampania}</option> //Por cada elemento del array, retorna una opción con el valor del id y el nombre de la campaña 
                 })}

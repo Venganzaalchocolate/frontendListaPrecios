@@ -11,7 +11,6 @@ import datos from "../../public/datos.json";
 import { obtenerFechaHoraActual } from "@/utils/utils";
 import { ordenarListaPropiedades, imagenExiste } from "@/utils/utils";
 
-
 // Estilos para la página y secciones del PDF
 const styles = StyleSheet.create({
   page: {
@@ -124,8 +123,10 @@ const Pdf = ({ viviendas, cam }) => {
 
   // Verificamos si hay viviendas para mostrar
   if (viviendas != null && viviendas != []) {
-      {/* Ordenar el array de acuerdo a la función de comparación */}
-      const pisosOrdenados = [...viviendas].sort(ordenarListaPropiedades);
+    {
+      /* Ordenar el array de acuerdo a la función de comparación */
+    }
+    const pisosOrdenados = [...viviendas].sort(ordenarListaPropiedades);
     return (
       <Document>
         <Page size="A4" style={styles.page}>
@@ -137,8 +138,8 @@ const Pdf = ({ viviendas, cam }) => {
             <Text style={styles.tituloLista}>LISTA DE PRECIOS</Text>
           </View>
           {/* Recorremos los viviendas (propiedades) y mostramos sus detalles */}
-         
-          {pisosOrdenados.map((casa,index) => {
+
+          {pisosOrdenados.map((casa, index) => {
             return (
               <View key={index}>
                 <View key={index} style={styles.section}>
@@ -220,19 +221,16 @@ const Pdf = ({ viviendas, cam }) => {
                     <></>
                   )}
                   {casa.trasteroPropiedad != null ? (
-                    <Text style={styles.texto}>
-                      Trastero nº: {casa.trasteroPropiedad}
+                    <Text style={styles.texto}>Trasteros: 1 
                     </Text>
                   ) : (
                     <></>
                   )}
-                  {casa.plazaPropiedad != null ? (
-                    <Text style={styles.texto}>
-                      Plaza nº: {casa.plazaPropiedad}
-                    </Text>
-                  ) : (
-                    <></>
-                  )}
+                  {casa.plazaParking2 != null ? ( // Si el numero de plaza de parking está definida, muestra la etiqueta y el valor.
+                    <Text style={styles.texto}>Parkings: 2</Text>
+                  ) : casa.plazaParking1 != null ? (
+                    <Text style={styles.texto}>Parkings: 1</Text>
+                  ) : null}
                 </View>
               </View>
             );
