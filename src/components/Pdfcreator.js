@@ -35,6 +35,15 @@ const styles = StyleSheet.create({
     display: "flex",
     maxWidth: "7cm"
   },
+  cajalogo: {
+    display: "flex",
+    flexDirection:"column",
+    alignItems:"center",
+    alignSelf: "center",
+    paddingTop:"1.4cm",
+    maxWidth: "5cm"
+   
+  },
   texto: {
     textAlign: "left",
     paddingLeft: "5px",
@@ -161,6 +170,19 @@ const Pdf = ({ viviendas, cam, data }) => {
       );
     }
   };
+
+  // Función para mostrar el logotipo de prime invest
+  const addLogoPrime=()=>{
+    const path=`/images/logo_prime.png`;
+    return( 
+    <View style={styles.cajalogo}>
+      <Image src={path} />
+    </View>);
+
+  }
+
+
+
   // Verificamos si hay viviendas para mostrar
   if (viviendas != null && viviendas != []) {
       {/* Ordenar el array de acuerdo a la función de comparación */}
@@ -279,6 +301,7 @@ const Pdf = ({ viviendas, cam, data }) => {
             );
           })}
           {addObservaciones(cam,data)}
+          {addLogoPrime()}
         </Page>
       </Document>
     );

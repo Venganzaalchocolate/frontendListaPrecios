@@ -5,7 +5,6 @@ import styles from "../styles/Tabla.module.css";
 export default function Tabla({ idCampania, data }) {
   //Filtramos los datos que nos llegan para quedarnos con el registro que coincide con el idCampania
   const campania = data.find((campania) => campania.idCampania === idCampania);
-  console.log(campania)
   //Si existe la campaña y si existen datos en el registro json
   if (campania && campania.contenidotabla) {
     const contenidoTabla = campania.contenidotabla;

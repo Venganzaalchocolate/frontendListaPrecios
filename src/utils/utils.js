@@ -1,5 +1,3 @@
-
-
 // función que comprueba si una imagen existe
 export function imagenExiste(imagen) {
     try {
@@ -82,6 +80,7 @@ export function imagenExiste(imagen) {
   };
 
 
+  //Función que devuelve la fecha y la hora actual en el momento de la descarga del documento.
 export function obtenerFechaHoraActual() {
     // Obtener la fecha y hora actual
     const fechaHoraActual = new Date();
