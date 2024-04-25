@@ -7,6 +7,7 @@ div.tarjeta {
   background-color: white;
   padding: 1rem;
   margin: 1rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -17,18 +18,25 @@ div.tarjeta {
 }
 
 .textoPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   letter-spacing: 0.2rem;
   border-bottom: 2px solid var(--color-gris-claro);
 }
 
 .textoPrincipal > label {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
   font-size: 12pt;
 }
 
 .textoPrincipal > p {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
   font-weight: bold;
   color: var(--color-dorado);
@@ -45,13 +53,19 @@ div.tarjeta {
 } */
 
 .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   letter-spacing: 0.1rem;
   color: var(--color-azul-oscuro);
 }
 
 .datos > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   padding: 0.5rem;
 }
@@ -68,10 +82,11 @@ div.tarjeta {
     letter-spacing: 0;
   }
 
-  
-
   .datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 3px;
     letter-spacing: 0;
@@ -83,6 +98,8 @@ div.tarjeta {
   }
 
   div.datos > div {
+    -webkit-box-flex: 49%;
+    -ms-flex: 49%;
     flex: 49%;
   }
 }

@@ -1,24 +1,24 @@
 .contenedor {
-    width: 400px; /* Ancho deseado del contenedor */
-    max-height: 200px; /* Alto deseado del contenedor */
-    overflow: hidden; /* Para ocultar partes de la imagen que no caben */
-    padding: 1rem;
-    padding-left: 2rem;
-    display: flex;
-    align-content: center;
-    align-self: center;
-    justify-content: flex-start;
+  width: 400px; /* Ancho deseado del contenedor */
+  max-height: 200px; /* Alto deseado del contenedor */
+  overflow: hidden; /* Para ocultar partes de la imagen que no caben */
+  padding: 1rem;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
 
+@media screen and (max-width: 750px) {
+  .contenedor {
+    width: 100%;
   }
-
-
-
-
-  @media screen and (max-width:750px) {
-    
-    .contenedor{
-      width: 100%;
-    }
-   
-   
-   }
+}

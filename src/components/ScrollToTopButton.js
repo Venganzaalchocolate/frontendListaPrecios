@@ -44,7 +44,7 @@ const ScrollToTopButton = () => {
       className={styles.boton}
       style={{ display: isVisible ? "flex" : "none" }}
     >
-      <FontAwesomeIcon icon={faUpLong} /> {/* Icono de flecha hacia arriba */}
+      <FontAwesomeIcon icon={faUpLong} className={styles.icono} /> {/* Icono de flecha hacia arriba */}
     </button>
   );
 };

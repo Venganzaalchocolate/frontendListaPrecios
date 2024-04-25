@@ -1,66 +1,85 @@
-#contenedorcampanias{
-    background-color: var(--color-azul-oscuro);
-    display: flex;
-    flex: 1;
+#contenedorcampanias {
+  background-color: var(--color-azul-oscuro);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+
+#contenedorcampanias > h2 {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  font-size: 36pt;
+  padding-bottom: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+#contenedorcampanias > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#contenedorcampanias > div > select {
+  padding: 1rem;
+  border: none;
+  background-color: var(--color-azul-claro);
+  color: white;
+  width: 20rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+#contenedorcampanias > div > select > option {
+  letter-spacing: 0.2rem;
+}
+
+#contenedorcampanias > div > button {
+  padding: 1rem;
+  border: none;
+  background-color: var(--color-azul-oscuro);
+  color: white;
+  text-align: center;
+  margin-left: 1rem;
+  border: 1px solid white;
+  letter-spacing: 0.2rem;
+}
+
+#contenedorcampanias > div > button:hover {
+  background-color: var(--color-dorado);
+}
+
+@media screen and (max-width: 750px) {
+  #contenedorcampanias > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    justify-content:center ;
-    align-content: center;
-    padding-bottom: 2rem;
-}
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
 
-#contenedorcampanias>h2{
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    font-size: 36pt;
-    padding-bottom: 2rem;
-    letter-spacing: 0.2rem;
-}
-
-#contenedorcampanias>div{
-    display: flex;
-    justify-content: center;
-}
-
-#contenedorcampanias>div>select{
-    padding: 1rem;
-    border: none;
-    background-color: var(--color-azul-claro);
-    color: white;
+  #contenedorcampanias > div > button {
+    margin-left: 0;
     width: 20rem;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.2rem;    
-}
-
-#contenedorcampanias>div>select>option{
-    letter-spacing: 0.2rem;    
-}
-
-#contenedorcampanias>div>button{
-    padding: 1rem;
-    border: none;
-    background-color: var(--color-azul-oscuro);
-    color: white;
-    text-align: center;
-    margin-left:1rem;
-    border: 1px solid white;
-    letter-spacing: 0.2rem;
-}
-
-#contenedorcampanias>div>button:hover{
-    background-color:var(--color-dorado);
-}
-
-@media screen and (max-width:750px){
-    #contenedorcampanias>div{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    #contenedorcampanias>div>button{
-        margin-left:0;
-        width: 20rem;
-    }
+  }
 }

@@ -75,3 +75,104 @@
   font-size: 6pt;
   text-align: right;
 }
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.5cm;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 11pt;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+
+.sectiondos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 8pt;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.cajafoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 100px;
+}
+
+.texto {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.foto {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.datosTitulo {
+  font-size: 12pt;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.textocaja {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 8pt;
+  border-color: black;
+  border: 1px;
+  width: 10cm;
+}
+
+.contenedorTabla {
+  border: 1px solid black;
+}
+
+.textolinea {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tituloLista {
+  font-size: 25pt;
+  border-bottom: 1px solid black;
+  padding-top: 1cm;
+}
+
+.fecha {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 6pt;
+  text-align: right;
+}
