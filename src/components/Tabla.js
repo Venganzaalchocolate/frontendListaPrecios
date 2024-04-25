@@ -1,11 +1,11 @@
 import React from "react";
-import datos from "../../public/datos.json";
 import styles from "../styles/Tabla.module.css";
 
 //Función que recibe un id y renderiza un div con datos extraidos de un json
-export default function Tabla({ idCampania }) {
+export default function Tabla({ idCampania, data }) {
   //Filtramos los datos que nos llegan para quedarnos con el registro que coincide con el idCampania
-  const campania = datos.find((campania) => campania.idCampania === idCampania);
+  const campania = data.find((campania) => campania.idCampania === idCampania);
+  console.log(campania)
   //Si existe la campaña y si existen datos en el registro json
   if (campania && campania.contenidotabla) {
     const contenidoTabla = campania.contenidotabla;
@@ -30,7 +30,5 @@ export default function Tabla({ idCampania }) {
       </div>
       
     );
-  } else {
-    return null;
   }
 }

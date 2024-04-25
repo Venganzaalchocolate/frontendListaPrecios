@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Image,
 } from "@react-pdf/renderer";
-import datos from "../../public/datos.json";
+
 import { obtenerFechaHoraActual } from "@/utils/utils";
 import { ordenarListaPropiedades, imagenExiste } from "@/utils/utils";
 // Estilos para la página y secciones del PDF
@@ -57,6 +57,12 @@ const styles = StyleSheet.create({
     width: "10cm",
     display:'flex'
   },
+  textoobservaciones:{
+    fontSize: "8pt",
+  },
+  cajaObservaciones:{
+    paddingTop: "1cm"
+  },
   contenedorTabla: {
     border: "1px solid black",
   },
@@ -88,8 +94,8 @@ const styles = StyleSheet.create({
   }
 });
 // Función para mostrar un recuadro con los datos de una campaña
-function addCaja(idCampania) {
-  const campania = datos.find((campania) => campania.idCampania == idCampania);
+function addCaja(idCampania, data) {
+  const campania = data.find((campania) => campania.idCampania == idCampania);
   // Verificamos si existe la campaña y si hay datos en el registro JSON
   if (campania && campania.contenidotabla) {
     const contenidoTabla = campania.contenidotabla;
@@ -111,8 +117,39 @@ function addCaja(idCampania) {
     );
   }
 }
+
+ function addObservaciones( idCampania,data) {
+  //Filtramos los datos que nos llegan para quedarnos con el registro que coincide con el idCampania
+  const campania = data.find((campania) => campania.idCampania === idCampania);
+  //Si existe la campaña y si existen datos en el registro json
+  if (campania && campania.observaciones && campania.comments) {
+   
+    const observaciones=(campania.observaciones.linea1!=null)?campania.observaciones.linea1.split('\n'):[];
+    const comments=(campania.comments.linea1!=null)?campania.comments.linea1.split('\n'):[];
+    return (
+      <View>
+        <View style={styles.cajaObservaciones}>
+          {observaciones.map((li, index) => (
+            <Text style={styles.textoobservaciones} key={index}>{li}</Text>
+          ))}
+        </View>
+
+        <View style={styles.cajaObservaciones}>
+          {comments.map((linea, index) => (
+            <Text style={styles.textoobservaciones} key={index}>{linea}</Text>
+          ))}
+        </View>
+      </View>
+    );
+  } else {
+    return null;
+  }
+}
+
+
+
 // Componente principal del PDF que recibe viviendas (propiedades) y la campaña
-const Pdf = ({ viviendas, cam }) => {
+const Pdf = ({ viviendas, cam, data }) => {
   const imagenPath = `/images/${cam}.png`;
   // Función para mostrar el logo si existe la imagen
   const addLogotipo = (path) => {
@@ -136,7 +173,7 @@ const Pdf = ({ viviendas, cam }) => {
             {addLogotipo(imagenPath)}
             <View style={styles.cajaDatos}>
             <Text style={styles.fecha}>{obtenerFechaHoraActual()}</Text>
-            {addCaja(cam)}
+            {addCaja(cam, data)}
             </View>
           </View>
           {/* Recorremos los viviendas (propiedades) y mostramos sus detalles */}
@@ -241,6 +278,7 @@ const Pdf = ({ viviendas, cam }) => {
               </View>
             );
           })}
+          {addObservaciones(cam,data)}
         </Page>
       </Document>
     );

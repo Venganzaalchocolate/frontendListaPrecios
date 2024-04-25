@@ -1,28 +1,26 @@
 import React from "react";
-import datos from "../../public/datos.json";
 import styles from "../styles/Observaciones.module.css";
 
 //Función que recibe un id y renderiza comentarios asociadas a las campañas
-export default function Observaciones({ idCampania }) {
+export default function Observaciones({ idCampania,data }) {
   //Filtramos los datos que nos llegan para quedarnos con el registro que coincide con el idCampania
-  const campania = datos.find((campania) => campania.idCampania === idCampania);
+  const campania = data.find((campania) => campania.idCampania === idCampania);
   //Si existe la campaña y si existen datos en el registro json
   if (campania && campania.observaciones && campania.comments) {
-    const lineasObservaciones = Object.keys(campania.observaciones);
-    const lineasComments = Object.keys(campania.comments);
+   
+    const observaciones=(campania.observaciones.linea1!=null)?campania.observaciones.linea1.split('\n'):[];
+    const comments=(campania.comments.linea1!=null)?campania.comments.linea1.split('\n'):[];
     return (
       <div className={styles.contenedorObservaciones}>
         <div className={styles.datosObservaciones}>
-          <div>OBSERVACIONES:</div>
-          {lineasObservaciones.map((linea, index) => (
-            <div key={index}>{campania.observaciones[linea]}</div>
+          {observaciones.map((li, index) => (
+            <div key={index}>{li}</div>
           ))}
         </div>
 
         <div className={styles.datosComments}>
-          <div>COMMENTS:</div>
-          {lineasComments.map((linea, index) => (
-            <div key={index}>{campania.comments[linea]}</div>
+          {comments.map((linea, index) => (
+            <div key={index}>{linea}</div>
           ))}
         </div>
       </div>

@@ -14,7 +14,6 @@ export default function Home({ data }) {
    // Estado para almacenar los apartamentos de la campaña seleccionada (inicialmente vacío)
   const [apartamento, setApartamento] = useState('');
   
-
   // Simular un tiempo de carga (por ejemplo, una llamada a una API)
   const addCampania = async (campania) => {
     setCampaniaSeleccionada(campania)
@@ -29,7 +28,7 @@ export default function Home({ data }) {
           {/* Componente para seleccionar campañas y agregar la seleccionada a la variable 'campaniaSeleccionada' */}
         <Campanias data={data} addCampania={(x) => addCampania(x)}></Campanias>
         {/* Componente para mostrar las propiedades disponibles sobre la campaña seleccionada.  */}
-        <MostrarPrecios campaniaSeleccionada={campaniaSeleccionada} viviendas={apartamento} />
+        <MostrarPrecios campaniaSeleccionada={campaniaSeleccionada} viviendas={apartamento} data={data}/>
       </Layout>
     </>
   );
