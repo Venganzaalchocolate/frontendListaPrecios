@@ -1,8 +1,15 @@
 div.contenedorObservaciones {
   background-color: var(--color-azul-oscuro);
   color: white;
-  padding: 2rem;
+  padding: 2rem 8%;
 }
 div.datosComments {
   padding-top: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  div.contenedorObservaciones {
+    padding: 2rem 0;
+  }
+
 }

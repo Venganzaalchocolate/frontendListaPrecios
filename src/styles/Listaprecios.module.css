@@ -1,6 +1,7 @@
 div#contenedorlista {
   background-color: var(--color-azul-oscuro);
   padding: 1rem 0;
+  padding: 0 8%;
 }
 
 div.tarjeta {
@@ -74,10 +75,15 @@ div.tarjeta {
   padding-left: 0;
 }
 
+
 /* DISPOSITIVO MÓVIL 
 10pt */
 
 @media screen and (max-width: 750px) {
+  div#contenedorlista {
+    padding: 0 0;
+  }
+
   .textoPrincipal {
     letter-spacing: 0;
   }

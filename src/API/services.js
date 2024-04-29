@@ -27,4 +27,7 @@ export const obtenerCampaniasActivas = async () => {
     return await handleRequest(url, "Error al obtener los datos de obtenerCampaniasActivas"); // Llama a la función auxiliar con la URL y el mensaje de error.
 };
 
-
+export const obtenerLogo = async (cam) => {
+    const url = `${config}obtenerlogo/${cam}`; // URL de la API para obtener campañas activas.
+    return await handleRequest(url, "Error al obtener los datos de obtenerCampaniasActivas"); // Llama a la función auxiliar con la URL y el mensaje de error.
+};

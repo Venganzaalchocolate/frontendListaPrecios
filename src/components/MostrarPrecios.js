@@ -10,15 +10,15 @@ import { obtenerFechaHoraActual } from "@/utils/utils";
 
 
 //Componente que renderiza el detalle de los precios de las propiedades según la campaña que haya sido seleccionada.
-const MostrarPrecios = ({ campaniaSeleccionada, viviendas, data }) => {
+const MostrarPrecios = ({ campaniaSeleccionada, viviendas, data, logo }) => {
   if (campaniaSeleccionada !== '') {
     const nombreCampania = data.find(item => item.idCampania === campaniaSeleccionada)?.nombreCampania;
 
     return (
-      <div>
+      <div id="contenedorMain">
         {/* Muestra los detalles de la campaña seleccionada */}
         <div id="cabeceramostrarprecios">
-          <Constructor idCampania={campaniaSeleccionada}></Constructor>
+          <Constructor logo={logo} idCampania={campaniaSeleccionada}></Constructor>
           <Tabla idCampania={campaniaSeleccionada} data={data}></Tabla>
         </div>
         <div id="contenedorBotonPDF">
