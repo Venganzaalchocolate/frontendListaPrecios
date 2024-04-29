@@ -24,7 +24,7 @@ const MostrarPrecios = ({ campaniaSeleccionada, viviendas, data, logo }) => {
         <div id="contenedorBotonPDF">
           <PDFDownloadLink
             className="botonpdf"
-            document={<Pdf cam={campaniaSeleccionada} data={data} viviendas={viviendas}></Pdf>}
+            document={<Pdf cam={campaniaSeleccionada} logo={logo} data={data} viviendas={viviendas}></Pdf>}
             fileName={`${nombreCampania} - Lista de precios ${obtenerFechaHoraActual()}`}
           >
             {({ blob, url, loading, error }) =>

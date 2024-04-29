@@ -158,11 +158,11 @@ function addCaja(idCampania, data) {
 
 
 // Componente principal del PDF que recibe viviendas (propiedades) y la campaña
-const Pdf = ({ viviendas, cam, data }) => {
-  const imagenPath = `/images/${cam}.png`;
+const Pdf = ({ viviendas, cam, data,logo }) => {
+  const imagenPath = logo;
   // Función para mostrar el logo si existe la imagen
   const addLogotipo = (path) => {
-    if (imagenExiste(path)) {
+    if (path.status_code!=404) {
       return (
         <View style={styles.cajafoto}>
           <Image style={styles.foto} src={path} />
